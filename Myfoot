@@ -1,10 +1,10 @@
 const channelData = {
-  "GLOBOBR": {
-    "file": "https://poc-sky0120.glbcdn.net/Content/Channel/live_0120/DASH/manifest.mpd?da=1&country=BR&accountType=DTH&deviceType=web",
+  "BBC1": {
+    "file": "https://wp1-obc1112-live-ch-prod.prod.cdn.dmdsdp.com/dash/SV09091/manifest.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "db1f45f2c7eb3229a72fccd82b60a6f7",
-        "key": "4e2070595da16f87e6e6459a26be34d6"
+        "keyId": "6401e1fead9d4f43910aaad360f46dd0",
+        "key": "598f5e4f10d4e040d25579478cadc4ee"
       }
     }
   },
