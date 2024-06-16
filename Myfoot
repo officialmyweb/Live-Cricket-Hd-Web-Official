@@ -8,12 +8,12 @@ const channelData = {
       }
     }
   },
-  "TV2_NO": {
-    "file": "https://aws-appeartv-cdn.rikstv.no/rikstv/1/11/dash/TV2_HD/manifest.mpd?version=1&adap=no_dolby&RikstvAssetId=rikstv_5711",
+  "TVLA1": {
+    "file": "https://mad02.cdn.avatel.tv/live/eds/la1/MPEG-DASH_Scrambled_High/la1.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "bfb0134de69d76d25b5b4b202df11431",
-        "key": "025915bd3062c4bde44a13916c5bfefe"
+        "keyId": "0b5e6af8d1f345828d9cfff8cbf903ee",
+        "key": "99df7780551f38af550a637923bd4a31"
       }
     }
   },
