@@ -4,18 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <title>FinallyLiveStreaming</title>
+    <title>Telegram-Live-Cric-Hd</title></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.5.0/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.5.0/controls.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="shakaplayer.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .shaka-video-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .shaka-video {
+            width: 100%;
+            height: 100%;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+    </style>
 </head>
-<body bgcolor="black" margin="0">
-    <center>
-        <div data-shaka-player-container="" style="width: 100%; height: 100%; cursor: none;" class="shaka-mobile shaka-video-container" shaka-controls="true">
-            <video poster="logo.jpg" autoplay="" data-shaka-player="" id="video" style="width:100%;height:100%;" class="shaka-video"></video>
-        </div>
-    </center>
+<body>
+    <div data-shaka-player-container="" class="shaka-video-container" shaka-controls="true">
+        <video poster="logo.jpg" autoplay data-shaka-player="" id="video" class="shaka-video"></video>
+    </div>
+
     <script>
         function getQueryParam(param) {
             const urlParams = new URLSearchParams(window.location.search);
@@ -26,19 +52,42 @@
             return channelData[channelId];
         }
 
-        async function init() {
+        async function fetchData() {
             const channelId = getQueryParam('id');
             const channelInfo = getChannelData(channelId);
 
             if (!channelInfo) {
                 console.error('Invalid channel ID');
-                return;
+                return null;
             }
 
-            const manifestUri = channelInfo.file;
-            const keyId = channelInfo.drm.clearkey.keyId;
-            const key = channelInfo.drm.clearkey.key;
+            return {
+                manifestUri: channelInfo.file,
+                keyId: channelInfo.drm.clearkey.keyId,
+                key: channelInfo.drm.clearkey.key
+            };
+        }
 
+        const addLogo = () => {
+            const logo = document.createElement('img');
+            logo.src = 'https://i.ibb.co/7VF2dfy/1000000077-removebg-preview.png';
+            logo.alt = 'Logo';
+            logo.className = 'logo';
+            logo.addEventListener('click', function() {
+                window.location.href = 'https://telegram.me/livecrichdofficial';
+            });
+
+            const videoContainer = document.querySelector('.shaka-video-container');
+            videoContainer.appendChild(logo);
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            addLogo();
+        });
+    </script>
+
+    <script>
+        async function initPlayer(manifestUri, keyId, key) {
             const video = document.getElementById('video');
             const ui = video['ui'];
             const controls = ui.getControls();
@@ -81,12 +130,18 @@
             console.error('Unable to load the UI library!');
         }
 
-        document.addEventListener('shaka-ui-loaded', init);
+        document.addEventListener('shaka-ui-loaded', async () => {
+            const data = await fetchData();
+            if (data) {
+                await initPlayer(data.manifestUri, data.keyId, data.key);
+            }
+        });
+
         document.addEventListener('shaka-ui-load-failed', initFailed);
 
-        var a = confirm("Join Our Telegram @finallylivestreaming For More");
+        var a = confirm("Join Our Telegram Channel @livecrichdofficial");
         if (a == true) {
-            window.location.href = "https://telegram.me/FinallyliveStreaming";
+            window.location.href = "https://telegram.me/livecrichdofficial";
         }
 
         function welcome() {
