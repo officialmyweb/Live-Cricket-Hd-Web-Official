@@ -35,12 +35,12 @@ const channelData = {
       }
     }
   },
-  "LAUNE_BE": {
-    "file": "https://daiconnect.com/live/dash/rtbf/laune-premium-drm-2/.mpd?t=2023-03-28T15%3A15%3A00.000&USrGDPRC=CPpVcwAPpVcwAAHABBENC9CsAP_AAAAAAAIgF5wFAAKgAXABAACoAFoAMgAaABFACYAE8AKUAWwBcADaAIAAQkA_QD-AIGAUgA_YC8wAAAEhIAMAAQSnDQAYAAglOIgAwABBKcVABgACCU4yADAAEEpx0AGAAIJTkIAMAAQSnJQAYAAglOUgAwABBKcA.f_gAAAAAAAAA&UGDPR=1&DAdID=e76997ff-4695-4a78-9bb8-488e1631872a&requestuid=742b0983-cd7c-11ed-961f-a2691158f87a",
+  "ZDF_DE": {
+    "file": "https://p7s1-live-001-prod.akamaized.net/45371d5a/t_009/zdf-de-hd/cenc-default.mpdF5wFAAKgAXABAACoAFoAMgAaABFACYAE8AKUAWwBcADaAIAAQkA_QD-AIGAUgA_YC8wAAAEhIAMAAQSnDQAYAAglOIgAwABBKcVABgACCU4yADAAEEpx0AGAAIJTkIAMAAQSnJQAYAAglOUgAwABBKcA.f_gAAAAAAAAA&UGDPR=1&DAdID=e76997ff-4695-4a78-9bb8-488e1631872a&requestuid=742b0983-cd7c-11ed-961f-a2691158f87a",
     "drm": {
       "clearkey": {
-        "keyId": "1a8315e4b64c4e638dc24d93134b9b2d",
-        "key": "2821b54058fb3adc9c6252c631aef9e5"
+        "keyId": "7757d3fa8cdab673a2dd9f3ed7b41360",
+        "key": "96e498b70eeecfc0164ed4e0a78e36f3"
       }
     }
   },
