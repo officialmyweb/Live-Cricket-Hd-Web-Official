@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="referrer" content="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram-Live-Cric-Hd</title>
+    <!-- Shaka Player scripts and styles -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.6/shaka-player.ui.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.6/controls.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="livecrichd.css"> <!-- Your custom CSS -->
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .shaka-video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            z-index: 1000;
+            width: 80px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video container with Shaka Player -->
+    <div data-shaka-player-container class="shaka-video-container">
+        <video autoplay data-shaka-player id="video" style="width:100%;height:100%;" poster="https://i.ibb.co/YcDwhDY/IMG-20240614-223829.jpg"></video>
+    </div>
+
+    <!-- Script block for logo addition and channel loading -->
+    <script>
+        // Function to add a logo with a link
+        function addLogo() {
+            const logo = document.createElement('img');
+            logo.src = 'https://i.ibb.co/7VF2dfy/1000000077-removebg-preview.png';
+            logo.alt = 'Logo';
+            logo.className = 'logo';
+            logo.addEventListener('click', function() {
+                window.location.href = 'https://telegram.me/livecrichdofficial';
+            });
+
+            const videoContainer = document.querySelector('.shaka-video-container');
+            videoContainer.appendChild(logo);
+        }
+
+        // Import channel data
+        import channelData from './channels.js';
+
+        // Function to load a channel based on channelId
+        async function loadChannel(channelId) {
+            const channel = channelData[channelId];
+            if (!channel) {
+                console.error(`Channel ${channelId} not found`);
+                return;
+            }
+
+            const manifestUri = channel.file;
+            const drmKeys = {
+                "clearKeys": {
+                    [channel.drm.clearkey.keyId]: channel.drm.clearkey.key
+                }
+            };
+
+            try {
+                const video = document.getElementById('video');
+                await window.player.load(manifestUri);
+                window.player.configure({
+                    drm: drmKeys
+                });
+                console.log(`Loaded ${channelId}: ${manifestUri}`);
+            } catch (error) {
+                console.error(`Error loading ${channelId}:`, error);
+            }
+        }
+
+        // DOMContentLoaded event listener to initialize logo and channel loading
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                addLogo();
+
+                const video = document.getElementById('video');
+                const ui = video['ui'];
+                const controls = ui.getControls();
+                const player = controls.getPlayer();
+                window.player = player;
+                window.ui = ui;
+
+                const config = {
+                    enableKeyboardPlaybackControls: true,
+                    seekBarColors: {
+                        base: 'rgba(255,255,255,.2)',
+                        buffered: 'rgba(255,255,255,.4)',
+                        played: 'rgb(255,0,0)',
+                    },
+                    addSeekBar: true,
+                    addBigPlayButton: true,
+                    addSettingsMenu: true,
+                    addCaptionsButton: true,
+                };
+                ui.configure(config);
+
+                player.configure({
+                    drm: window.drmKeys
+                });
+
+                document.addEventListener('keydown', (e) => {
+                    // Key handling code as needed
+                });
+
+                player.addEventListener('error', onPlayerErrorEvent);
+                controls.addEventListener('error', onUIErrorEvent);
+
+                // Load default channel (replace with your initial channel if needed)
+                await loadChannel('BBC1'); // Example: Load BBC1 by default
+            } catch (error) {
+                console.error('Unable to initialize logo, Shaka Player, or load channel!', error);
+            }
+        });
+
+        // Event listeners for player and UI errors
+        function onPlayerErrorEvent(errorEvent) {
+            console.error('Player error', errorEvent.detail);
+        }
+
+        function onUIErrorEvent(errorEvent) {
+            console.error('UI error', errorEvent.detail);
+        }
+    </script>
+
+    <!-- Script block for Shaka Player initialization -->
+    <script>
+        // Function to initialize Shaka Player
+        async function initShakaPlayer() {
+            try {
+                const video = document.getElementById('video');
+                const ui = video['ui'];
+                const controls = ui.getControls();
+                const player = controls.getPlayer();
+                window.player = player;
+                window.ui = ui;
+
+                const config = {
+                    enableKeyboardPlaybackControls: true,
+                    seekBarColors: {
+                        base: 'rgba(255,255,255,.2)',
+                        buffered: 'rgba(255,255,255,.4)',
+                        played: 'rgb(255,0,0)',
+                    },
+                    addSeekBar: true,
+                    addBigPlayButton: true,
+                    addSettingsMenu: true,
+                    addCaptionsButton: true,
+                };
+                ui.configure(config);
+
+                player.configure({
+                    drm: window.drmKeys
+                });
+
+                document.addEventListener('keydown', (e) => {
+                    // Key handling code as needed
+                });
+
+                player.addEventListener('error', onPlayerErrorEvent);
+                controls.addEventListener('error', onUIErrorEvent);
+            } catch (error) {
+                console.error('Unable to initialize Shaka Player!', error);
+            }
+        }
+
+        // DOMContentLoaded event listener to initialize Shaka Player
+        document.addEventListener('DOMContentLoaded', initShakaPlayer);
+
+        // Event listeners for player and UI errors
+        function onPlayerErrorEvent(errorEvent) {
+            console.error('Player error', errorEvent.detail);
+        }
+
+        function onUIErrorEvent(errorEvent) {
+            console.error('UI error', errorEvent.detail);
+        }
+    </script>
+</body>
+</html>
