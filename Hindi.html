@@ -15,6 +15,10 @@
     </div>
     
     <script>
+                if (confirm("Join Our Telegram Channel @livecrichdofficial")) {
+            window.location.href = "https://telegram.me/livecrichdofficial";
+                }
+        
         // Install and configure the Shaka Player
         async function init() {
             const video = document.getElementById('video');
@@ -45,7 +49,7 @@
             player.addEventListener('error', onPlayerErrorEvent);
             controls.addEventListener('error', onUIErrorEvent);
 
-            document.addEventListener('shaka-ui-loaded', init);
+            document.addEventListener('shaka-ui-loaded', loadVideo);
             document.addEventListener('shaka-ui-load-failed', initFailed);
         }
 
@@ -111,7 +115,6 @@
 
         document.addEventListener('DOMContentLoaded', function() {
             addLogo();
-            loadVideo();
         });
     </script>
 </body>
