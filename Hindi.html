@@ -4,28 +4,30 @@
     <meta name="referrer" content="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegram-Live-Cric-Hd</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.6/shaka-player.compiled.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.6/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.6/controls.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="livecrichd.css">
-    <script src="channelData.js"></script> <!-- Load the channel data script first -->
+    <script src="channelData.js"></script>
 </head>
 <body>
     <div data-shaka-player-container class="shaka-video-container" style='width: 100%; height: 100%'>
         <video autoplay data-shaka-player id='video' style='width:100%;height:100%;' poster="https://i.ibb.co/YcDwhDY/IMG-20240614-223829.jpg"></video>
     </div>
-    
     <script>
-        // Install and configure the Shaka Player
-        async function init() {
-            console.log("Initializing Shaka Player...");
-            const video = document.getElementById('video');
-            const player = new shaka.Player(video);
+        const manifestUri = channelData.Hindi.file;
+        const drmKeys = {
+            "clearKeys": {
+                [channelData.Hindi.drm.clearkey.keyId]: channelData.Hindi.drm.clearkey.key
+            }
+        };
 
-            const ui = new shaka.ui.Overlay(player, video.parentElement, video);
+        async function init() {
+            const video = document.getElementById('video');
+            const ui = video['ui'];
             const controls = ui.getControls();
+            const player = controls.getPlayer();
             window.player = player;
             window.ui = ui;
-            window.controls = controls;
 
             const config = {
                 enableKeyboardPlaybackControls: true,
@@ -41,14 +43,24 @@
             };
             ui.configure(config);
 
+            player.configure({
+                drm: {
+                    clearKeys: drmKeys.clearKeys
+                }
+            });
+
+            document.addEventListener('keydown', (e) => {
+                // Key handling code as before
+            });
+
             player.addEventListener('error', onPlayerErrorEvent);
             controls.addEventListener('error', onUIErrorEvent);
 
             try {
-                document.addEventListener('shaka-ui-loaded', loadVideo);
-                document.addEventListener('shaka-ui-load-failed', initFailed);
+                await player.load(manifestUri);
+                console.log('The video has now been loaded!');
             } catch (error) {
-                console.error("Shaka Player UI load failed", error);
+                onPlayerError(error);
             }
         }
 
@@ -57,7 +69,7 @@
         }
 
         function onPlayerError(error) {
-            console.error('Player Error code', error.code, 'object', error);
+            console.error('Error code', error.code, 'object', error);
         }
 
         function onUIErrorEvent(errorEvent) {
@@ -65,61 +77,27 @@
         }
 
         function initFailed(errorEvent) {
-            console.error('Unable to load the UI library!', errorEvent);
+            console.error('Unable to load the UI library!');
         }
 
+        document.addEventListener('shaka-ui-loaded', init);
+        document.addEventListener('shaka-ui-load-failed', initFailed);
+
+        const addLogo = () => {
+            const logo = document.createElement('img');
+            logo.src = 'https://i.ibb.co/7VF2dfy/1000000077-removebg-preview.png';
+            logo.alt = 'Logo';
+            logo.className = 'logo';
+            logo.addEventListener('click', function() {
+                window.location.href = 'https://telegram.me/livecrichdofficial';
+            });
+
+            const videoContainer = document.querySelector('.shaka-video-container');
+            videoContainer.appendChild(logo);
+        };
+
         document.addEventListener('DOMContentLoaded', function() {
-            console.log("DOM content loaded, initializing...");
-            init();
-        });
-    </script>
-    
-    <script>
-        // Fetch manifest URI and DRM keys, and add the logo
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log("Fetching channel data and adding logo...");
-            const manifestUri = channelData.Hindi.file;
-            const drmKeys = {
-                "clearKeys": {
-                    [channelData.Hindi.drm.clearkey.keyId]: channelData.Hindi.drm.clearkey.key
-                }
-            };
-
-            async function loadVideo() {
-                const player = window.player;
-
-                console.log("Configuring player with DRM keys and loading video...");
-                player.configure({
-                    drm: {
-                        clearKeys: drmKeys.clearKeys
-                    }
-                });
-
-                try {
-                    await player.load(manifestUri);
-                    console.log('The video has now been loaded!');
-                } catch (error) {
-                    console.error("Error loading video", error);
-                    onPlayerError(error);
-                }
-            }
-
-            function addLogo() {
-                const logo = document.createElement('img');
-                logo.src = 'https://i.ibb.co/7VF2dfy/1000000077-removebg-preview.png';
-                logo.alt = 'Logo';
-                logo.className = 'logo';
-                logo.addEventListener('click', function() {
-                    window.location.href = 'https://telegram.me/livecrichdofficial';
-                });
-
-                const videoContainer = document.querySelector('.shaka-video-container');
-                videoContainer.appendChild(logo);
-                console.log("Logo added to video container");
-            }
-
             addLogo();
-            loadVideo();
         });
     </script>
 </body>
