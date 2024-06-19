@@ -15,9 +15,6 @@
     </div>
     
     <script>
-    if (confirm("Join Our Telegram Channel @livecrichdofficial")) {window.location.href = "https://telegram.me/livecrichdofficial";}
-                    
-        // Install and configure the Shaka Player
         async function init() {
             const video = document.getElementById('video');
             const ui = video['ui'];
@@ -41,7 +38,6 @@
             ui.configure(config);
 
             document.addEventListener('keydown', (e) => {
-                // Key handling code as before
             });
 
             player.addEventListener('error', onPlayerErrorEvent);
@@ -73,46 +69,46 @@
     </script>
     
     <script>
-        // Fetch manifest URI and DRM keys, and add the logo
-        const manifestUri = channelData.Hindi.file;
-        const drmKeys = {
-            "clearKeys": {
-                [channelData.Hindi.drm.clearkey.keyId]: channelData.Hindi.drm.clearkey.key
-            }
-        };
-
-        async function loadVideo() {
-            const player = window.player;
-
-            player.configure({
-                drm: {
-                    clearKeys: drmKeys.clearKeys
-                }
-            });
-
-            try {
-                await player.load(manifestUri);
-                console.log('The video has now been loaded!');
-            } catch (error) {
-                onPlayerError(error);
-            }
-        }
-
-        function addLogo() {
-            const logo = document.createElement('img');
-            logo.src = 'https://i.ibb.co/7VF2dfy/1000000077-removebg-preview.png';
-            logo.alt = 'Logo';
-            logo.className = 'logo';
-            logo.addEventListener('click', function() {
-                window.location.href = 'https://telegram.me/livecrichdofficial';
-            });
-
-            const videoContainer = document.querySelector('.shaka-video-container');
-            videoContainer.appendChild(logo);
-        }
-
         document.addEventListener('DOMContentLoaded', function() {
+            const manifestUri = channelData.Hindi.file;
+            const drmKeys = {
+                "clearKeys": {
+                    [channelData.Hindi.drm.clearkey.keyId]: channelData.Hindi.drm.clearkey.key
+                }
+            };
+
+            async function loadVideo() {
+                const player = window.player;
+
+                player.configure({
+                    drm: {
+                        clearKeys: drmKeys.clearKeys
+                    }
+                });
+
+                try {
+                    await player.load(manifestUri);
+                    console.log('The video has now been loaded!');
+                } catch (error) {
+                    onPlayerError(error);
+                }
+            }
+
+            function addLogo() {
+                const logo = document.createElement('img');
+                logo.src = 'https://i.ibb.co/7VF2dfy/1000000077-removebg-preview.png';
+                logo.alt = 'Logo';
+                logo.className = 'logo';
+                logo.addEventListener('click', function() {
+                    window.location.href = 'https://telegram.me/livecrichdofficial';
+                });
+
+                const videoContainer = document.querySelector('.shaka-video-container');
+                videoContainer.appendChild(logo);
+            }
+
             addLogo();
+            loadVideo();
         });
     </script>
 </body>
