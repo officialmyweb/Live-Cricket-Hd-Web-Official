@@ -36,7 +36,7 @@ const channelData = {
     }
   },
   "ZDF_DE": {
-    "file": "https://p7s1-live-001-prod.akamaized.net/45371d5a/t_009/zdf-de-hd/cenc-default.mpdMAAQSnDQAYAAglOIgAwABBKcVABgACCU4yADAAEEpx0AGAAIJTkIAMAAQSnJQAYAAglOUgAwABBKcA.f_gAAAAAAAAA&UGDPR=1&DAdID=e76997ff-4695-4a78-9bb8-488e1631872a&requestuid=742b0983-cd7c-11ed-961f-a2691158f87a",
+    "file": "https://p7s1-live-001-prod.akamaized.net/45371d5a/t_009/zdf-de-hd/cenc-default.mpdBKcA.f_gAAAAAAAAA&UGDPR=1&DAdID=e76997ff-4695-4a78-9bb8-488e1631872a&requestuid=742b0983-cd7c-11ed-961f-a2691158f87a",
     "drm": {
       "clearkey": {
         "keyId": "7757d3fa8cdab673a2dd9f3ed7b41360",
@@ -68,6 +68,15 @@ const channelData = {
       "clearkey": {
         "keyId": "0036e5d0e88dfb087f1791da6150ced9",
         "key": "0bc653d830837dceb13bd17169f0f8e2"
+      }
+    }
+  },
+ "Spotv": {
+    "file": "https://linearjitp-playback.astro.com.my/dash-wv/dashiso/5148/default.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "e7c650ac72dcd0311411832a8271bb10",
+        "key": "ea8fa43cc7102e481cd441c58b2ecb08"
       }
     }
   },
