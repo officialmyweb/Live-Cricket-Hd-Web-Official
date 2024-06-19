@@ -4,7 +4,7 @@
     <meta name="referrer" content="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegram-Live-Cric-Hd</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.6/shaka-player.ui.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.6/shaka-player.compiled.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.6/controls.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="livecrichd.css">
     <script src="channelData.js"></script> <!-- Load the channel data script first -->
@@ -15,13 +15,17 @@
     </div>
     
     <script>
+        // Install and configure the Shaka Player
         async function init() {
+            console.log("Initializing Shaka Player...");
             const video = document.getElementById('video');
-            const ui = video['ui'];
+            const player = new shaka.Player(video);
+
+            const ui = new shaka.ui.Overlay(player, video.parentElement, video);
             const controls = ui.getControls();
-            const player = controls.getPlayer();
             window.player = player;
             window.ui = ui;
+            window.controls = controls;
 
             const config = {
                 enableKeyboardPlaybackControls: true,
@@ -37,14 +41,15 @@
             };
             ui.configure(config);
 
-            document.addEventListener('keydown', (e) => {
-            });
-
             player.addEventListener('error', onPlayerErrorEvent);
             controls.addEventListener('error', onUIErrorEvent);
 
-            document.addEventListener('shaka-ui-loaded', loadVideo);
-            document.addEventListener('shaka-ui-load-failed', initFailed);
+            try {
+                document.addEventListener('shaka-ui-loaded', loadVideo);
+                document.addEventListener('shaka-ui-load-failed', initFailed);
+            } catch (error) {
+                console.error("Shaka Player UI load failed", error);
+            }
         }
 
         function onPlayerErrorEvent(errorEvent) {
@@ -52,7 +57,7 @@
         }
 
         function onPlayerError(error) {
-            console.error('Error code', error.code, 'object', error);
+            console.error('Player Error code', error.code, 'object', error);
         }
 
         function onUIErrorEvent(errorEvent) {
@@ -60,16 +65,19 @@
         }
 
         function initFailed(errorEvent) {
-            console.error('Unable to load the UI library!');
+            console.error('Unable to load the UI library!', errorEvent);
         }
 
         document.addEventListener('DOMContentLoaded', function() {
+            console.log("DOM content loaded, initializing...");
             init();
         });
     </script>
     
     <script>
+        // Fetch manifest URI and DRM keys, and add the logo
         document.addEventListener('DOMContentLoaded', function() {
+            console.log("Fetching channel data and adding logo...");
             const manifestUri = channelData.Hindi.file;
             const drmKeys = {
                 "clearKeys": {
@@ -80,6 +88,7 @@
             async function loadVideo() {
                 const player = window.player;
 
+                console.log("Configuring player with DRM keys and loading video...");
                 player.configure({
                     drm: {
                         clearKeys: drmKeys.clearKeys
@@ -90,6 +99,7 @@
                     await player.load(manifestUri);
                     console.log('The video has now been loaded!');
                 } catch (error) {
+                    console.error("Error loading video", error);
                     onPlayerError(error);
                 }
             }
@@ -105,6 +115,7 @@
 
                 const videoContainer = document.querySelector('.shaka-video-container');
                 videoContainer.appendChild(logo);
+                console.log("Logo added to video container");
             }
 
             addLogo();
