@@ -36,7 +36,7 @@ const channelData = {
     }
   },
   "ZDF_DE": {
-    "file": "https://p7s1-live-001-prod.akamaized.net/45371d5a/t_009/zdf-de-hd/cenc-default.mpdBKcA.f_gAAAAAAAAA&UGDPR=1&DAdID=e76997ff-4695-4a78-9bb8-488e1631872a&requestuid=742b0983-cd7c-11ed-961f-a2691158f87a",
+    "file": "https://p7s1-live-001-prod.akamaized.net/45371d5a/t_009/zdf-de-hd/cenc-default.mpd",
     "drm": {
       "clearkey": {
         "keyId": "7757d3fa8cdab673a2dd9f3ed7b41360",
