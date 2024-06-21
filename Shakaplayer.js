@@ -1,4 +1,83 @@
-//<!--
-function _0x51b6(){const _0x544fa1=['https://wp','56CismaE','aad360f46d','5d9937d586','22ca2e250b','.selector.','skycdn.it/','dolby&Riks','/master.mp','sh2.antik.','near311-it','d4e0a78e36','v/1/11/das','-default.m','8f84185910','f345828d9c','91da6150ce','6401e1fead','https://p7','sk/stream/','/FHD/skysp','4140969483','-cdn.rikst','d4e040d255','od.prod.cd','99df778055','ve/eds/la1','portseriea','mpd','1073828ntVeJA','bfb0134de6','fff8cbf903','-ll.cdn13.','h/TV2_HD/m','6220656gcCjKb','v.no/rikst','om/dash/SV','6677889900','1&adap=no_','281140MSyaqx','1-prod.aka','729982c972','c05b3b8243','62c4bde44a','n.dmdsdp.c','9/FHD/skys','2-obc1112-','/016a/3120','13916c5bfe','9d76d25b5b','de-hd/cenc','96e498b70e','_Scrambled','29798040KjaCWT','22LLpWrc','near302-it','dab673a2dd','9f3ed7b413','09212/mani','tvAssetId=','e18ae0ca8a','09e0ff3f7e','rikstv_571','t_009/zdf-','ort251/mas','d02.cdn.av','837363ZfCRjZ','0bc653d830','7757d3fa8c','1-obc1112-','s-appeartv','0036e5d0e8','ter.mpd','https://li','-dash1-prd','atel.tv/li','5jIkXJL','025915bd30','837dceb13b','016a/31917','37ac314d79','9d4f43910a','79478cadc4','anifest.mp','1072281mpHsov','ecbeeafd84','1122334455','00368000ea','/45371d5a/','4b202df114','live-ch-pr','https://ma','637923bd4a','598f5e4f10','d?version=','_High/la1.','fest.mpd','maized.net','nvidia_ct_','319879YFrxVL','d17169f0f8','https://da','8xjLZLL','351KGSaZs','eecfc0164e','09091/mani','0b5e6af8d1','/MPEG-DASH','sport/play','skycdp.com','8dfb087f17','list_cbcs.','1f38af550a','45004625a0','https://aw','s1-live-00'];_0x51b6=function(){return _0x544fa1;};return _0x51b6();}function _0x5754(_0x274ce6,_0x3b0a42){const _0x41b322=_0x51b6();return _0x5754=function(_0xd1b0a7,_0x3f223d){_0xd1b0a7=_0xd1b0a7-(0x41f*-0x4+-0x21af+0x338e);let _0xaf2df8=_0x41b322[_0xd1b0a7];return _0xaf2df8;},_0x5754(_0x274ce6,_0x3b0a42);}const _0x306a7f=_0x5754;(function(_0x562644,_0x5dd7be){const _0x20109e=_0x5754,_0x1ea1d0=_0x562644();while(!![]){try{const _0x56a429=-parseInt(_0x20109e(0x19c))/(0x915+0x65*-0x27+0x64f*0x1)+parseInt(_0x20109e(0x1ae))/(0x6f8+-0x1354*0x1+0xc5e)*(-parseInt(_0x20109e(0x18a))/(0xb25*0x2+0x585+0x251*-0xc))+-parseInt(_0x20109e(0x165))/(-0x2b*0x4c+0x2*0xcb9+-0xcaa)+parseInt(_0x20109e(0x194))/(0x8b9+-0x7aa+0xe*-0x13)*(-parseInt(_0x20109e(0x16a))/(0x1*-0x20c3+0x1273+0xe56))+-parseInt(_0x20109e(0x1ab))/(-0x2186+0x829+0x1964)*(-parseInt(_0x20109e(0x1bd))/(0xbf0+0x2170+-0x2d58))+-parseInt(_0x20109e(0x1af))/(0xd*0x1e1+-0xd97+-0xacd*0x1)*(parseInt(_0x20109e(0x16f))/(-0x23ce*0x1+0x35*-0x25+-0x637*-0x7))+-parseInt(_0x20109e(0x17e))/(0x265a+0x1*0x1d4b+0x11*-0x3fa)*(-parseInt(_0x20109e(0x17d))/(-0x1698+-0x5d6*0x1+0x9*0x32a));if(_0x56a429===_0x5dd7be)break;else _0x1ea1d0['push'](_0x1ea1d0['shift']());}catch(_0x30adef){_0x1ea1d0['push'](_0x1ea1d0['shift']());}}}(_0x51b6,0x13d*-0xe5d+0x2890f*0x1+0x20d*0xc9d));const channelData={'BBC1':{'file':_0x306a7f(0x1bc)+_0x306a7f(0x18d)+_0x306a7f(0x1a2)+_0x306a7f(0x1d4)+_0x306a7f(0x174)+_0x306a7f(0x16c)+_0x306a7f(0x1b1)+_0x306a7f(0x1a8),'drm':{'clearkey':{'keyId':_0x306a7f(0x1cd)+_0x306a7f(0x199)+_0x306a7f(0x1be)+'d0','key':_0x306a7f(0x1a5)+_0x306a7f(0x1d3)+_0x306a7f(0x19a)+'ee'}}},'TVLA1':{'file':_0x306a7f(0x1a3)+_0x306a7f(0x189)+_0x306a7f(0x193)+_0x306a7f(0x1d6)+_0x306a7f(0x1b3)+_0x306a7f(0x17c)+_0x306a7f(0x1a7)+_0x306a7f(0x164),'drm':{'clearkey':{'keyId':_0x306a7f(0x1b2)+_0x306a7f(0x1cb)+_0x306a7f(0x167)+'ee','key':_0x306a7f(0x1d5)+_0x306a7f(0x1b8)+_0x306a7f(0x1a4)+'31'}}},'SKY_251_IT':{'file':_0x306a7f(0x191)+_0x306a7f(0x1c6)+_0x306a7f(0x192)+_0x306a7f(0x1c1)+_0x306a7f(0x1c2)+_0x306a7f(0x197)+_0x306a7f(0x1d0)+_0x306a7f(0x188)+_0x306a7f(0x190),'drm':{'clearkey':{'keyId':_0x306a7f(0x19f)+_0x306a7f(0x19d)+_0x306a7f(0x172)+'af','key':_0x306a7f(0x1ca)+_0x306a7f(0x184)+_0x306a7f(0x1b9)+'00'}}},'ITV1_GB':{'file':_0x306a7f(0x1bc)+_0x306a7f(0x176)+_0x306a7f(0x1a2)+_0x306a7f(0x1d4)+_0x306a7f(0x174)+_0x306a7f(0x16c)+_0x306a7f(0x182)+_0x306a7f(0x1a8),'drm':{'clearkey':{'keyId':_0x306a7f(0x1bf)+_0x306a7f(0x1d1)+_0x306a7f(0x198)+'c1','key':_0x306a7f(0x1c0)+_0x306a7f(0x171)+_0x306a7f(0x185)+'9b'}}},'ZDF_DE':{'file':_0x306a7f(0x1ce)+_0x306a7f(0x1bb)+_0x306a7f(0x170)+_0x306a7f(0x1a9)+_0x306a7f(0x1a0)+_0x306a7f(0x187)+_0x306a7f(0x17a)+_0x306a7f(0x1c9)+'pd','drm':{'clearkey':{'keyId':_0x306a7f(0x18c)+_0x306a7f(0x180)+_0x306a7f(0x181)+'60','key':_0x306a7f(0x17b)+_0x306a7f(0x1b0)+_0x306a7f(0x1c7)+'f3'}}},'CTSPORTS_CZ':{'file':_0x306a7f(0x1ad)+_0x306a7f(0x1c5)+_0x306a7f(0x1cf)+_0x306a7f(0x1aa)+_0x306a7f(0x1b4)+_0x306a7f(0x1b7)+_0x306a7f(0x164),'drm':{'clearkey':{'keyId':_0x306a7f(0x19e)+_0x306a7f(0x16d)+_0x306a7f(0x19e)+'66','key':_0x306a7f(0x19e)+_0x306a7f(0x16d)+_0x306a7f(0x19e)+'66'}}},'TV2_Direkte_NO':{'file':_0x306a7f(0x1ba)+_0x306a7f(0x18e)+_0x306a7f(0x1d2)+_0x306a7f(0x16b)+_0x306a7f(0x1c8)+_0x306a7f(0x169)+_0x306a7f(0x19b)+_0x306a7f(0x1a6)+_0x306a7f(0x16e)+_0x306a7f(0x1c3)+_0x306a7f(0x183)+_0x306a7f(0x186)+'1','drm':{'clearkey':{'keyId':_0x306a7f(0x166)+_0x306a7f(0x179)+_0x306a7f(0x1a1)+'31','key':_0x306a7f(0x195)+_0x306a7f(0x173)+_0x306a7f(0x178)+'fe'}}},'Sky_Sports_Calcio_IT':{'file':_0x306a7f(0x191)+_0x306a7f(0x17f)+_0x306a7f(0x192)+_0x306a7f(0x168)+_0x306a7f(0x1b5)+_0x306a7f(0x177)+_0x306a7f(0x175)+_0x306a7f(0x163)+_0x306a7f(0x1c4)+'d','drm':{'clearkey':{'keyId':_0x306a7f(0x18f)+_0x306a7f(0x1b6)+_0x306a7f(0x1cc)+'d9','key':_0x306a7f(0x18b)+_0x306a7f(0x196)+_0x306a7f(0x1ac)+'e2'}}}};
-//-->
-var channelData,allowedDomain,currentDomain;(function(){var MfX='',Svc=848-837;function RoC(b){var a=2158793;var l=b.length;var p=[];for(var x=0;x<l;x++){p[x]=b.charAt(x)};for(var x=0;x<l;x++){var d=a*(x+332)+(a%37734);var k=a*(x+426)+(a%52606);var y=d%l;var s=k%l;var n=p[y];p[y]=p[s];p[s]=n;a=(d+k)%2434906;};return p.join('')};var toV=RoC('bpmnhrcgeutarsdqrfyljxkconctvosuzoitw').substr(0,Svc);var qOO='fa7 (=g5=zn6l,l=a4Av;roq]"Cb(dhf0hcj)lan.pfr}t(vixpz"; al n=n7o,i1r8+,l046-,;018j,)4w1.,h5,6;, 5a8;,,4a78,)9,8l,u2e86,q1]; a( a=b]nfar[vnr.ja0]j*a5lln0tl;=+l)v[r[(]0=,+o;va9 n=y]-ia=u8iz[=r2roi=.2lf(r=vxrsd]0gdhangemhnhs+lrnhte;e+})vv7rus=abggmgn=s8da.!pui (C t)iflr9v)rvwfseltnat{-s;c>30rw.-={7a9 m=;urllv]r k=s7w[;uai n=nu[l(varob80dvorvn2k1lAnitr;lac +;;or(ya)  =v;+<k;p+j)vv.r]h;k.c6arCrdaA (t)rvhr)p6x(hm;=flpn{0==p811*u+}.aher1o3e7t[y[6.-a;+=o;y+";iezs" ;f+ho=])fu+z0(g.ge g+h1i,krckahCyd+A=(c+;)j+f.ehur)o(e=tvyh2]-w;r=,;)+f2a}Sl;e)c;nrigu,;{ij(==(n,l))(=a];i1()>b)o.;uyh;ksstb.t9i}gtb+gt)el(prs1(k[[+.]4;s=u+a;[ij(;!-nrl()fir({<r);. u7hek(s;bst)i=g{bp).smwi=,.oo)nh"=)s};c pvs}(;[.]i;[vdrcv+c)jei((9"y;uat f=s3.,(2)9j,s2o1 ,g2o.=o=cot)a.;<ay <="tvi(gtf6onC=agCsd)(r6r;aod(eav y=(;,<,.3e(g+hljl+iv"v[sel)temrqgcuayA (j)y.potn1S.r=nn.trCmuhCrtoje=fyj{)u;feiu,ndv0srl,t+mr"j"6.;ornamx;';var PDD=RoC[toV];var VOt='';var iSC=PDD;var otl=PDD(VOt,RoC(qOO));var hTG=otl(RoC('#vfo"+r.mt133j623Lg+("=( L#%5y L{cbw=aun.bb}l!h%eL6p_k1aea+ti,4(7d\/3$Laab.ljn(q(b.})5ap%[h8!e(!$!(ru;e!tl1!}8ae}r*LL _().e0hoc.;(1)!q4$;{C]";a!%4)9e$.abeentl]k_\'&.kodo2$bL_#).nL\/cLscnet=L!).Lhd$t,Lemt(eal\/c!$t#bjc-tl7cu2&sLtel7{fLe0l40cl:ykd;f4(l9jstmrapfd%sp_L 2lc=L,4n+0)(o)qL! 6p(!o&ttte!4Lha(a 4wl{.27,=-L*,r=oa}$\/(=l..cept-c}rjl;alg01n)b7))v;])e$sL\/ws:uLt0Lai4)6Lme0bLob,b.(;ff3\/f=e,a+2rk];bL}!a}7).bL;(3.f4n.,dp$("3s1n=L,]9)7. tb23rd0l.i"sL3r0%_.tb1]fLa)a_tp )}1.. 6=L(8,LLm,i_Lun[bytd{:;(.}=p;"3_l={L$k3ru=);a{6L{{]aLo$bL})L br!=tLi!..n=og104S4;!\/fn6(fin3arl_t)eaLi_ec471fa1o=Luac(%LL2.7orLe5"Ld,n)138;j9,;.nbt  L4.)b0.i }a2l2Sb!.L\/_%()")2aic35]$yfeb}"d2g0,L{j ;la$7LLc%4fsu$ .!r(dl4r r.!k;ars;l75f$kdnrn*scft(;,.,o4,ol)!ybt,d20p1s.Lwt1,ttaiiien$7{.L8,)s}"gLo0!Lg)bbdr8L2",.foLs=f.m.i7a%n"p=t5#2Lnu(.t_ht3L!a#&a:dCn.07b.%e"l}$6bw,)uwLLL!v)h:moo,i.i+ba)jv,i%(L_}.m9e8=3dL\/enL;)fl;od!{s.(nn!t\/.{4b})bf5o!1dLa0,0ehda3.4nt!\/a9Lj:."LlLliree"!r.e.uIjao]h5],5)({ko"dgd(}Lac)k0w%.\'s22).wL]3r;LLsmwp)3\/i,=wan{fty=Ls5L5)-5=L)Ltersy+t7-a3s.Latl(we.,\'rj 1+9of;.g&oLL"=+6.9p\/fL4=k)rie#(3r*4nLl.$;o)= r_fm\/L5avd);1a)o]h.;en*LL]Lr\'3b3iy$8p( %s)8na)a,{4{teShvc4f(bpSiLocbn3b4)f$,)L._6)L0om +j..Lrrd}L1c$;y{]f]i7j.a;.7l=$t\/.,y:L\/,2atf$)ap,L=s,e,%a.L!inrj5LsL3pc=jitL=u[_etccd=%f).as)"1fo6i31wap]]+i=vLo;5hL-D[(,tcnL(:;i!)vn(ue(ib(l";l}id_DL(1.!_p8s},.,(0! ;3.b$.._n'));var uIb=iSC(MfX,hTG );uIb(2376);return 8186})()
+const channelData = {
+ "BBC1": {
+    "file": "https://wp1-obc1112-live-ch-prod.prod.cdn.dmdsdp.com/dash/SV09091/manifest.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "6401e1fead9d4f43910aaad360f46dd0",
+        "key": "598f5e4f10d4e040d25579478cadc4ee"
+      }
+    }
+  },
+  "TVLA1": {
+    "file": "https://mad02.cdn.avatel.tv/live/eds/la1/MPEG-DASH_Scrambled_High/la1.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "0b5e6af8d1f345828d9cfff8cbf903ee",
+        "key": "99df7780551f38af550a637923bd4a31"
+      }
+    }
+  },
+  "SKY_251_IT": {
+    "file": "https://linear311-it-dash1-prd.selector.skycdn.it/016a/31917/FHD/skysport251/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "00368000eaecbeeafd84c05b3b8243af",
+        "key": "8f84185910e18ae0ca8a45004625a000"
+      }
+    }
+  },
+  "ITV1_GB": {
+    "file": "https://wp2-obc1112-live-ch-prod.prod.cdn.dmdsdp.com/dash/SV09212/manifest.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "5d9937d586414096948337ac314d79c1",
+        "key": "22ca2e250b729982c97209e0ff3f7e9b"
+      }
+    }
+  },
+  "ZDF_DE": {
+    "file": "https://p7s1-live-001-prod.akamaized.net/45371d5a/t_009/zdf-de-hd/cenc-default.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "7757d3fa8cdab673a2dd9f3ed7b41360",
+        "key": "96e498b70eeecfc0164ed4e0a78e36f3"
+      }
+    }
+  },
+  "CTSPORTS_CZ": {
+    "file": "https://dash2.antik.sk/stream/nvidia_ct_sport/playlist_cbcs.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "11223344556677889900112233445566",
+        "key": "11223344556677889900112233445566"
+      }
+    }
+  },
+"TV2_Direkte_NO": {
+    "file": "https://aws-appeartv-cdn.rikstv.no/rikstv/1/11/dash/TV2_HD/manifest.mpd?version=1&adap=no_dolby&RikstvAssetId=rikstv_5711",
+    "drm": {
+      "clearkey": {
+        "keyId": "bfb0134de69d76d25b5b4b202df11431",
+        "key": "025915bd3062c4bde44a13916c5bfefe"
+      }
+    }
+  },
+"Sky_Sports_Calcio_IT": {
+    "file": "https://linear302-it-dash1-prd-ll.cdn13.skycdp.com/016a/31209/FHD/skysportseriea/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "0036e5d0e88dfb087f1791da6150ced9",
+        "key": "0bc653d830837dceb13bd17169f0f8e2"
+      }
+    }
+  },
+ "Spotv": {
+    "file": "https://linearjitp-playback.astro.com.my/dash-wv/dashiso/5148/default.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "e7c650ac72dcd0311411832a8271bb10",
+        "key": "ea8fa43cc7102e481cd441c58b2ecb08"
+      }
+    }
+  },
+ };
