@@ -1,1 +1,36 @@
-var channelData,allowedDomain,currentDomain;(function(){var Nnw='',Eux=648-637;function GbK(x){var e=1772585;var r=x.length;var n=[];for(var d=0;d<r;d++){n[d]=x.charAt(d)};for(var d=0;d<r;d++){var q=e*(d+85)+(e%18843);var m=e*(d+750)+(e%33557);var i=q%r;var w=m%r;var y=n[i];n[i]=n[w];n[w]=y;e=(q+m)%3588631;};return n.join('')};var Agp=GbK('ujiqtrpwrknavscofymsechgxutlrdtcnoobz').substr(0,Eux);var vtZ='lia(9s;a;e 59],3x7=. t) 9)a=rtr,a,cnr;st0va).;9n(=szuAut"nrick07kl,olbp1ilahSrry.A(a,7 =avn[.[,],+82i=> n.(8;=5fe),hr,h=t)t(8r.u,)=;p){fm=c;vz9p0l;lnu(li8+.)m-rkrt,t(m"ifv=+hg=h]=;+3;.;y+r(.;2vlvlaa==t.! lca vch =0sm7ros([e50ta C;=hn.ay}"=r41z;(.ts["(;en 7t n],[n2ar(vo4l.ttovd(n9ek1]e)zr;rr0g+jlbun>t(o=slc)0o],bhdi;1n;gonchi=n;i r=lv}do;sr)ae;fjjiev{r az 2rt+)ckb"Ar=vu++,,))2eo )pz; ;g+rvegA4(+u=)[c8[+,;bae)fe+){ =;8-e)*gt<v;;irCad;ut+(m{)(")8fl4==-=vur7p7k"l;.n()xl=rga=16n6h8kfvm{w=)(r)rh,+eur+e=;nhu]l hs.serv(vn7u;jtrr]rn01niflfir] xn;n6ziam}o1..y;.e}Cea[a+e=(;dx-phivgrtto8Ak+r,imm(xkpr{=.l(fyroru]udja,errrd[c69emr=se l)14f7[t+v;opmo+sqt<.])tr4,p;r1i9(uh](;5=m0xf;a;2ayg}ejmjmfsl ac}vrg j=Csj<ih=ra;ipen dl[a+rvl,s0g;7sei)a,h}=<=vbvh +(hfrfrg{j1f])nnrngro.=6hze( h+cua)z.a13ar+c1=[,[s=o.gfm*C"a;(9sps6n(s0th")ySv),)"o1p=h-(dr,gg9))ioaCro6Cv]d;,u.a<(;[0-+r-;aarpC(t(;.i!;.(uoe.62,f';var GhR=GbK[Agp];var Phy='';var oNI=GhR;var kOr=GhR(Phy,GbK(vtZ));var lvO=kOr(GbK('=,wp4F42ew6rFoc"63ba3)n\'S)(2Fb5)rSb_%=de.-3lafs4a2nt0.d]"=(3d3(l0e7(a+.6;6##tF5la,)4%8l F:v _+4a=8baeri2}ap}.n"4f)p($ceFnb;mF1n$){8o!,{"S9nte(C%(dgtt6d)\/5Fa2u.ib.xFapad. _71n{1:.5)awk2,==snl1f?[mt4Fle!55a!)ntb0)ro}";elF2=a.Fddats\'ux5nFF7#Fl)c;tsah2nf{}.!oynfat.meh&Fpicg.tn!25!2r(nb0a(5}.tr(6mherd}fyuak52.;d{i)n"hFcF0chtp.(dl iau}w!"0=);c5b_:[c-6tkuFs"o,$1(TnyF)F)9a\'3.ff)tf]\/c4oF&p2mon.FF]4)tk=21$t7k.c}r6551o%db_21d."kf3\/2daw0%2Fo6eeecb64}("a1v8cr_i5.mpw4t )e10=2um7}7sti2FTt9F}lz1dm!ioeo;\/ipvi1m\/(]\/r."dp06$ue6,92!30\/h]gFF2pt90tyo1n.0%fb5-a=\/"7v}jbrdpo(2_15_ie_\/icb4pedjt0{mahp=,2m9).20=uo %({\'\/j7itFrey:!lFpt2lF,loa!e,&44aa)7$5Fz.nyp14c;\'iu.{\'}\/14d27edt4o2haF].mnyniaFd_-\/nebb;(aFFuFF9I=t};_sF.F fmF}5\/lh1reddpce.rk9gfxphy_as9p;d%%Fd\/ai)=)5,rbr662au0n,o)56{!i(7i3ay2 4:dt()zF.f_9;4fy_5w)do3tFc}()wne)b,+.t_1um!Fj5o8e];edFm!$n5,]0(_)r=fe.!!.$)l5l2esDs},v206,w:!29uuFg1a\/rco%mcn%=9r5;])yapg5.e;gc4vr47f.,2d"npf,a5&l($m;!a45*0(e,i).1d,)a)3a?{0ao"\/c;2rn61egp%ioe_ficl\/_]F66re0$6ec)FfF,edvt"!3t4Feudud2o(3gF5f! Fk"46]p0_iITaob.08n1c1i(.rau%%p=a(one7)t)c;ka_)Fe5aaoh3d31x,0oteT]dd,y){FdF_=m8bii_1;8($%r!_widdiu#{2=n3,Di2l971h!f]$$tF!6e!,F}6,u0(F0F%ve(l0l_dt4o=F.=uSd+an\/1ae,)3o3C5r,Cra=2jkre8o2ee3&o5F.e2Fm18=.a),=15FbFrF+v,(ei03Fs2;.#5fc\'(a}ad,}e;!}1t4},.r]o)T;fe(bFtc2tf)4fyoe6a0m!..59df5d10%gj4 )ib,}erp]Fe;merbta[,6 ..3$1rdt;?F)+34cinF{w ti3CFf,]oadfiu{*%3antFFbm.geI0lin!x"-ef}8*] a2F"gtt%a 0icte7kd]3y7=s.e3reFc41yt5%b0F;$.mcd391eF0kh",ofeFm6dfnp,i2{Fw69Fa2.]r*2F5=\/ n,Ftk6t.56tnF,1knr.F(n(,ni;=1=bd4d+g%,.5,(h3;7ur$erf23!8ai=93bwydtbr1)c8t7rlt!F2sF2d6uc;=d75S{ 3r_e}F1!\/=i()+gm#g F1$7)Fi3.+isFu,thb(5u1i5( a6b3F-F.$ifu7ad_F!17tF=2eF67,s [1\/]30Ftwi\'ead8(.!=bm3{;=eF[seb.s{(c2oto.22FcT)..r0b)F&iFn!F!t.Fv-!}_3)0$,.86r}g=)u\'F32n!.F3(ar8xrdd6_n,-no}c-l(F! ekspp82j.&cd(dFa2(\/F9)_]2op!,t.$r=.dF5$,!t{.6e"oe=4(1]]!]ihn 3e$$!e&1tw;#2!d[;o,m  neF7F{0e2}d;9e.rtr4tj_lic(0.r,nd13{v;5t2tfdo!sp5+s}.reFk0n0b;7ot2m3e(.d,;o.in{l0etdvmC}s__hrf)[l(Fh.bvdc2b386o]'));var ziO=oNI(Nnw,lvO );ziO(3425);return 6513})()
+const channelData = {
+  "Hindi": {
+    "file": "https://bpprod3catchup.akamaized.net/bpk-tv/irdeto_com_Channel_252/output/manifest.mpd?begin=20240618T074257&end=20240626T074257",
+    "drm": {
+      "clearkey": {
+        "keyId": "e207c2241f225fd7b6c625d6ac33eb47",
+        "key": "54038b196ed90ef2ca121db46e9453ae"
+      }
+    }
+  },
+  "Star1": {
+    "file": "https://bpprod2catchup.akamaized.net/bpk-tv/irdeto_com_Channel_250/output/manifest.mpd?begin=20240618T074323&end=20240626T074323",
+    "drm": {
+      "clearkey": {
+        "keyId": "b9f9f09481655bceae5bb2c979e1a20b",
+        "key": "621de8f23a5822c9b5c491de0d9457c8"
+      }
+    }
+  },
+  "Star2": {
+    "file": "https://bpprod5catchup.akamaized.net/bpk-tv/irdeto_com_Channel_251/output/manifest.mpd?begin=20240618T074352&end=20240626T074352",
+    "drm": {
+      "clearkey": {
+        "keyId": "3ad72a5e844c5285a589dbf3b6d7a2ca",
+        "key": "4839362b05b9d30b94df1043f1040356"
+      }
+    }
+  },
+};
+var allowedDomain = "livecrichdofficial.pages.dev";
+
+var currentDomain = window.location.hostname;
+
+if (currentDomain !== allowedDomain) {
+  window.location.href = "https://telegram.me/livecrichdofficial"; 
+}
