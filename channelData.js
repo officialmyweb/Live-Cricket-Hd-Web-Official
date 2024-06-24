@@ -1,6 +1,6 @@
 const channelData = {
   "Hindi": {
-    "file": "https://bpprod3catchup.akamaized.net/bpk-tv/irdeto_com_Channel_252/output/manifest.mpd?begin=20240618T074257&end=20240626T074257",
+    "file": "https://bpprod3catchup.akamaized.net/bpk-tv/irdeto_com_Channel_252/output/xxx.mpd",
     "drm": {
       "clearkey": {
         "keyId": "e207c2241f225fd7b6c625d6ac33eb47",
@@ -9,7 +9,7 @@ const channelData = {
     }
   },
   "Star1": {
-    "file": "https://bpprod2catchup.akamaized.net/bpk-tv/irdeto_com_Channel_250/output/manifest.mpd?begin=20240618T074323&end=20240626T074323",
+    "file": "https://bpprod2catchup.akamaized.net/bpk-tv/irdeto_com_Channel_250/output/xxx.mpd",
     "drm": {
       "clearkey": {
         "keyId": "b9f9f09481655bceae5bb2c979e1a20b",
@@ -18,11 +18,11 @@ const channelData = {
     }
   },
   "Star2": {
-    "file": "https://linearjitp-playback.astro.com.my/dash-wv/linear/2506/default.mpd",
+    "file": "https://bpprod5catchup.akamaized.net/bpk-tv/irdeto_com_Channel_251/output/xxx.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "79f4028730acca9ab8b00f26158ddb10",
-        "key": "91febe843c08c7cc523efd827292e40e"
+        "keyId": "3ad72a5e844c5285a589dbf3b6d7a2ca",
+        "key": "4839362b05b9d30b94df1043f1040356"
       }
     }
   }
