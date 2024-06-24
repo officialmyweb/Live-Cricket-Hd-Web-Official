@@ -18,11 +18,11 @@ const channelData = {
     }
   },
   "Star2": {
-    "file": "https://bpprod5catchup.akamaized.net/bpk-tv/irdeto_com_Channel_251/output/manifest.mpd?begin=20240618T074352&end=20240626T074352",
+    "file": "https://linearjitp-playback.astro.com.my/dash-wv/linear/2506/default.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "3ad72a5e844c5285a589dbf3b6d7a2ca",
-        "key": "4839362b05b9d30b94df1043f1040356"
+        "keyId": "79f4028730acca9ab8b00f26158ddb10",
+        "key": "91febe843c08c7cc523efd827292e40e"
       }
     }
   }
