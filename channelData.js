@@ -25,10 +25,10 @@ const channelData = {
         "key": "4839362b05b9d30b94df1043f1040356"
       }
     }
-  },
+  }
 };
-var allowedDomain = "livecrichdofficial.pages.dev";
 
+var allowedDomain = "livecrichdofficial.pages.dev";
 var currentDomain = window.location.hostname;
 
 if (currentDomain !== allowedDomain) {
