@@ -34,3 +34,5 @@ html, body {
             z-index: 10;
         }
         /* Styles as before */
+
+        .shaka-spinner-container { display: none; }
