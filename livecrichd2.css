@@ -1,23 +1,26 @@
-       body, html {
+html, body {
             margin: 0;
             padding: 0;
-            width: 100%;
             height: 100%;
-            background-color: black;
-              
-        video {
             width: 100%;
-            height: 100%;
+            overflow: hidden;
         }
-        .shaka-spinner-container { display: none; }
 
-        .logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 100px; /* Adjust the width as needed */
-            height: auto;
-            cursor: pointer;
-            z-index: 10;
+        #player-container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
         }
-        /* Styles as before */
+
+        .shaka-video-container {
+            height: 100%;
+            width: 100%;
+        }
+
+        video {
+            height: 100%;
+            width: 100%;
+        }
