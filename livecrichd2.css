@@ -21,3 +21,14 @@
             height: 100%;
         }
         .shaka-spinner-container { display: none; }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px; /* Adjust the width as needed */
+            height: auto;
+            cursor: pointer;
+            z-index: 10;
+        }
+        /* Styles as before */
