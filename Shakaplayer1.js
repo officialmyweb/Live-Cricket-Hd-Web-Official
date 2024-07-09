@@ -1,10 +1,10 @@
 const channelData = {
   "UEFA": {
-    "file": "https://p7s1-live-001-prod.akamaized.net/28df258a/t_009/daserste-de-hd/cenc-default.mpd",
+    "file": "https://live.vrtcdn.be/groupc/live/8edf3bdf-7db3-41c3-a318-72cb7f82de66/live.isml/.mpd?filter=%28%21%28type%3D%3D%22audio%22%26%26FourCC%21%3D%22AACL%22%29%29",
     "drm": {
       "clearkey": {
-        "keyId": "667f821486adfa6df62b53e41fe60c65",
-        "key": "be65cc2c378180153cbac97bc6ab8625"
+        "keyId": "ef4daa3c90333621e4115ff1ca5bfbda",
+        "key": "424c9902fce5a2e7dcbeb37ffc06b906"
       }
     }
   },
