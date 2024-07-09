@@ -25,5 +25,14 @@ const channelData = {
         "key": "11223344556677889900112233445566"
       }
     }
+  },
+  "tv4": {
+    "file": "https://director.streaming.telia.com/tvm-packager-prod/group2/61a4859b79019af4abf1009d/manifest.mpd?adap=default",
+    "drm": {
+      "clearkey": {
+        "keyId": "b09d157d18ab51b9923a3d5abdeefd52",
+        "key": "5a29bb3c705edea6941a5b1d575ac316"
+      }
+    }
   }
 };
