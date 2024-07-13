@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream Player</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/shaka-player.ui.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/controls.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://livecrichdofficial.pages.dev/livecrichd2.css">
+    <script src="Shakaplayer2.js"></script>
+  <link rel="stylesheet" href="https://livecrichdofficial.pages.dev/livecrichd2.css">  
+</head>
+<body>
+<div id="player-container">
+    <div data-shaka-player-container class="shaka-video-container">
+        <video autoplay data-shaka-player id='video' poster="https://i.ibb.co/dW8vYhg/IMG-20240620-185727.jpg"></video>
+    </div>
+</div>
+<script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+
+<script>
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    async function initPlayer() {
+        const video = document.getElementById('video');
+        const ui = video['ui'];
+        const controls = ui.getControls();
+        const player = controls.getPlayer();
+
+        // Configure UI elements
+        const config = {
+            'controlPanelElements': ['play_pause', 'mute', 'spacer', 'time_and_duration', 'quality', 'fullscreen', 'picture_in_picture', 'overflow_menu'],
+            'overflowMenuButtons': ['captions', 'cast', 'quality', 'language']
+        };
+        ui.configure(config);
+
+        window.player = player;
+        window.ui = ui;
+
+        player.addEventListener('error', onPlayerErrorEvent);
+        controls.addEventListener('error', onUIErrorEvent);
+
+        const channelId = getQueryParam('id');
+        const manifestUri = getManifestUri(channelId);
+
+        if (manifestUri) {
+            try {
+                await player.load(manifestUri);
+                console.log('The video has now been loaded!');
+            } catch (error) {
+                onPlayerError(error);
+            }
+        } else {
+            console.error('No manifest URI found for the given channel id.');
+        }
+    }
+
+    function onPlayerErrorEvent(errorEvent) {
+        onPlayerError(errorEvent.detail);
+    }
+
+    function onPlayerError(error) {
+        console.error('Error code', error.code, 'object', error);
+    }
+
+    function onUIErrorEvent(errorEvent) {
+        onPlayerError(errorEvent.detail);
+    }
+
+    function initFailed(errorEvent) {
+        console.error('Unable to load the UI library!');
+    }
+
+    document.addEventListener('shaka-ui-loaded', initPlayer);
+    document.addEventListener('shaka-ui-load-failed', initFailed);
+</script>
+
+</body>
+</html>
