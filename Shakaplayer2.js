@@ -13,7 +13,7 @@ const channelData = {
   },
   "Tsn5": {
     "file": "https://cors-proxy.cooks.fyi/https://livecdn-iptv001.rumsport.com/stream/774/manifest.mpd"
-  },
+  }
 };
 
 function getManifestUri(id) {
