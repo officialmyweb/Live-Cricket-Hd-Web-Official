@@ -3,7 +3,7 @@ const channelData = {
     "file": "https://livecdn-iptv001.rumsport.com/stream/770/manifest.mpd"
   },
   "Tsn2": {
-    "file": "https://bpprod3catchup.akamaized.net/bpk-tv/irdeto_com_Channel_253/output/yyy.mpd"
+    "file": "https://cors-proxy.cooks.fyi/https://livecdn-iptv001.rumsport.com/stream/771/manifest.mpd"
   },
   "Tsn3": {
     "file": "https://bpprod3catchup.akamaized.net/bpk-tv/irdeto_com_Channel_254/output/zzz.mpd"
