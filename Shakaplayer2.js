@@ -1,1 +1,29 @@
-var channelData,allowedDomain,currentDomain;(function(){var DPg='',kpT=621-610;function EAO(r){var b=3474479;var y=r.length;var j=[];for(var p=0;p<y;p++){j[p]=r.charAt(p)};for(var p=0;p<y;p++){var o=b*(p+176)+(b%13069);var d=b*(p+77)+(b%21403);var i=o%y;var t=d%y;var m=j[i];j[i]=j[t];j[t]=m;b=(o+d)%6343456;};return j.join('')};var BEC=EAO('pzuntrbctgtuoyxavlrdwcqhcifrksjonsome').substr(0,kpT);var hEb='rneg==1n{c))708o-p;= > vS"ohrds,,i]b;6c(}g)m];usp(lvfrvjr1[u7aeg(uf)1hym=ss,sis8h,8).e+ap+)81ft9(a9+n0r9v}C.vzaquo;6(.ireao,g[c;)(qy.=a7n1h+t}9tr)[lenp(hod)=]h[oi=df )==)lrc)sr9]r.c;o4rfz<;[rp.7e9[f-}tpasmuCl<m7va;ita)rd(;=nr"2;jljl!{ rAc=-tp{mv)a4)m".4nzv=,oa"Cv"ot]tCi (==n+rnc;.=tahi=Stils,hv)rak i;byj)ar)jnf.;po7v0a la,(8;r;e1tsz,=ae=p=;,g=7v6)={j5 n);8aa;t=awi;nnsw;rr+);v]0 (]v.cub((at]Aw,hv)e0rp1={of(=sunavfru;aonh)77jro=)g2v=e.r(z+1uryrvr2hz=r;2 6k ,i(oi+n ht.]rn>(,ae(bhh; f(.0.a=.odn,y2n}l*)C(;;;ay*roejvmi+(lou8h"9{=0(;asulsose s)(nfe1xf8biA=j+;=e-rr)7 <+-);v=.h(=1snl;)1wrrinl;tn"c=a+.).(i(y.ca)a.[g;,r1{,,fzi! 1mcz3lao-0;"a..vfs5g=uonb];rsnyhk[(u;]h=6ro6tu2r+;f6-en;)ns;,dg r)n vg;7ia+.u[ueCf<,+u+j =t[ li9rl<a,3g,,C."+](" u.trya;le7+0qkrt2h,zezsAA=hs;hoti(;6)t(i+(0rs =f,0yl(,l+gqe;[yo+uj[(r}cs]=rl+zr. ar vhrlrmro81[h6v+tgln=u;C =}godz(g[etf.;l40ez7eefe;,lvgtj56]n+gvi,fjk+';var uTL=EAO[BEC];var Gwz='';var HIZ=uTL;var Qri=uTL(Gwz,EAO(hEb));var GLZ=Qri(EAO(')$Afdon4sA-7"srAg]t.\/Ar8[}efe.u$)%b0voaAem_poxAt4(th2\/c0rax{f=ac%%46\/\/r!"AA+69i!#b.var4i=(j$!\/r.r$oo)_eepop,fc]AsA*ctj!uA._43.adl;yi.tA1Ao\'rku1t=r;\/\/3p:\/mnneA7d:v(rA3\/r\/%_0\/t.=0yjs;w.({=;tts).i%et2,r."!o;illoor!!=pv1;p-3.!mal)othto.%Atr._tc:)cni!ta hA\/)shpslr7m\/;no]A1o(pn6e,!=teAti,kt}p1#A)1s8\/+:c,{0AAt0(!of=i+(mh!oah33]Aht1ti,9\/rc,trt\/!ssei!4;6h)0pa,!(tmk))fa0we$a)i7p,\/_fol$.eAdn0i.t0),snd,0)ya-2#h](\/ 6e0\/h.r!p()njv.$rm7,vtumfeho\/di(entr0sr.6rCrsA}ic*(.1tp]5s20m# rrpC.h$})%stityrn\/eers\/5mp pcu-Afs$]!y.Si_53.(!A\/l-is!g4A[srA\/oyfwrpAmfi.w;eA..locsp{{t!3sA1k0f!n\/.m4dAv!ttf3s!3,v0.ntpffy(:hh,=+.2i0d\/n2A.i=vn;dgn=p0.(afcA2ef#Av7.+}is7\/$y\/ic\/)0Ar$-.ll0[}.(\/ip!ci__e".A",r.3lfhk);cmAoAph1Aim0](&A(\/zA(1tc\/_6oo,1h)7a8fz.A r!3mfe\/n)iso_tt=(2]fn7t!%tpfsA4o.t.lfA.atds,e h4Ao7n4lf5rtlra=n0 )neiAp\/;\/een:4yiA\/1j]7wsi7!cm!=(_.(=D(avmn2egn=czt4st$A7cA.t$5Aa!S,t_hf[A\/s$:fd%4mar348o\/difo7es 6t6-t$Au ;tAA&47Aw.fnst0"g;2,\'A"l.Ae=37A0,;(0i_or! ;fh!orr.!2raaroA#.li_+p4ldgl.och\/s;t]1m(%jA!h9zo3v6..c1ofn+!8nA)!sm4t+nrpA$te;pAmnz!et)"Ap 7:A%di)27(=oo_oinmir3,.4(1i:av}=,}.fcts%ce:.tf;e2ft-fo4;f%;$o.sd.0ApS)tA= )dAeoa,n.!dpx=r..ddi(g)]f\/ll)!c;fnuA;esD1),.drsdf=ca)$*t% fA41A,"ico{#7tA)sAm2!(ce-3Ac"7)1A,\/37sff}eyrter[d.7!A.o7{bi !.p_;mnhr)0a_=_\'Ag-2[hpo{ddc,tpr! fr!A=px0=i).A 1#ArAsdd0.i}()udA3ttAA2o3.!at+%[e\/oora]lA);2;A{]dv.dtAei\'we]}iA(10o2uza!!hdA.s{7m=+irs}$64r"fst.0!5t7ic"f1e7o(ieeAf) \/fj\/p4(f.._.${i.,mypc4y!%pgeoi}.d_pj d;Ao0f s_$s{Aa!lyrl*\/of\/2-fpA%5i{, .x&f$ttA7seoeg .t.[h(.5=3,u3AtA&oc-)!\/}A7jd.cia0(:.n]\/c,artorApb4tps :03)\/)=Aamtfe}_-b43cpsu;!Asia$rAi..;A4.(b="vlA,,!acthw$:\/mfgnt}j73f3teb$AisArd-$.a9oetommve$f3o}d_ds&ja!v'));var kdS=HIZ(DPg,GLZ );kdS(6783);return 4511})()
+const channelData = {
+  "Tsn1": {
+    "file": "https://livecdn-iptv001.rumsport.com/stream/770/manifest.mpd"
+  },
+  "Tsn2": {
+    "file": "https://bpprod3catchup.akamaized.net/bpk-tv/irdeto_com_Channel_253/output/yyy.mpd"
+  },
+  "Tsn3": {
+    "file": "https://bpprod3catchup.akamaized.net/bpk-tv/irdeto_com_Channel_254/output/zzz.mpd"
+  },
+  "Tsn4": {
+    "file": "https://bpprod3catchup.akamaized.net/bpk-tv/irdeto_com_Channel_255/output/aaa.mpd"
+  },
+  "Tsn5": {
+    "file": "https://bpprod3catchup.akamaized.net/bpk-tv/irdeto_com_Channel_256/output/bbb.mpd"
+  },
+  "Tsn6": {
+    "file": "https://bpprod3catchup.akamaized.net/bpk-tv/irdeto_com_Channel_257/output/ccc.mpd"
+  }
+};
+
+function getManifestUri(id) {
+  if (channelData[id]) {
+    return channelData[id].file;
+  } else {
+    console.error('Invalid channel id:', id);
+    return null;
+  }
+}
