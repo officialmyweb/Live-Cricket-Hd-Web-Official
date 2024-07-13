@@ -24,3 +24,14 @@ function getManifestUri(id) {
     return null;
   }
 }
+
+// Allowed domain
+const allowedDomain = "livecrichdofficial.pages.dev";
+
+// Check current domain
+const currentDomain = window.location.hostname;
+
+// Redirect if the current domain doesn't match the allowed domain
+if (currentDomain !== allowedDomain) {
+  window.location.href = "https://telegram.me/livecrichdofficial"; // Redirect to your preferred URL
+}
