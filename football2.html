@@ -13,69 +13,15 @@
 <body>
 <div id="player-container">
     <div data-shaka-player-container class="shaka-video-container">
-        <video autoplay data-shaka-player id='video' poster="https://i.ibb.co/dW8vYhg/IMG-20240620-185727.jpg"></video>
+        <video autoplay data-shaka-player id='video' poster="#"></video>
     </div>
 </div>
 <script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
 
 <script>
-    function getQueryParam(param) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(param);
-    }
-
-    async function initPlayer() {
-        const video = document.getElementById('video');
-        const ui = video['ui'];
-        const controls = ui.getControls();
-        const player = controls.getPlayer();
-
-        // Configure UI elements
-        const config = {
-            'controlPanelElements': ['play_pause', 'mute', 'spacer', 'time_and_duration', 'quality', 'fullscreen', 'picture_in_picture', 'overflow_menu'],
-            'overflowMenuButtons': ['captions', 'cast', 'quality', 'language']
-        };
-        ui.configure(config);
-
-        window.player = player;
-        window.ui = ui;
-
-        player.addEventListener('error', onPlayerErrorEvent);
-        controls.addEventListener('error', onUIErrorEvent);
-
-        const channelId = getQueryParam('id');
-        const manifestUri = getManifestUri(channelId);
-
-        if (manifestUri) {
-            try {
-                await player.load(manifestUri);
-                console.log('The video has now been loaded!');
-            } catch (error) {
-                onPlayerError(error);
-            }
-        } else {
-            console.error('No manifest URI found for the given channel id.');
-        }
-    }
-
-    function onPlayerErrorEvent(errorEvent) {
-        onPlayerError(errorEvent.detail);
-    }
-
-    function onPlayerError(error) {
-        console.error('Error code', error.code, 'object', error);
-    }
-
-    function onUIErrorEvent(errorEvent) {
-        onPlayerError(errorEvent.detail);
-    }
-
-    function initFailed(errorEvent) {
-        console.error('Unable to load the UI library!');
-    }
-
-    document.addEventListener('shaka-ui-loaded', initPlayer);
-    document.addEventListener('shaka-ui-load-failed', initFailed);
+//
+const _0x313eaf=_0x28c5;(function(_0x11c391,_0x1dd637){const _0x2a9dce=_0x28c5,_0x3775ec=_0x11c391();while(!![]){try{const _0x552bf0=parseInt(_0x2a9dce(0xdb))/(0x1668+0x4*0x3d1+-0x25ab*0x1)+-parseInt(_0x2a9dce(0xc1))/(-0xa*0x3c+0x128b+-0x5*0x33d)+-parseInt(_0x2a9dce(0xd3))/(-0xcdb*0x3+-0x47*0x4a+0x3b1a)+-parseInt(_0x2a9dce(0xba))/(-0xf9f+0xd*-0x189+0x2398)+-parseInt(_0x2a9dce(0xcd))/(-0x1e2f+0xb83*0x3+-0x1*0x455)*(-parseInt(_0x2a9dce(0xb9))/(-0x1f28+0xb2a*0x3+-0x128*0x2))+-parseInt(_0x2a9dce(0xde))/(0x1*0xd6f+0xa*0x11a+0x2*-0xc36)+parseInt(_0x2a9dce(0xea))/(-0x16fa+0x136d+0x395)*(parseInt(_0x2a9dce(0xae))/(-0x21c4+0xc41+0x563*0x4));if(_0x552bf0===_0x1dd637)break;else _0x3775ec['push'](_0x3775ec['shift']());}catch(_0x41a147){_0x3775ec['push'](_0x3775ec['shift']());}}}(_0x4284,-0x11a*0x2bf+-0x960b9+-0x1060c*-0x11));function getQueryParam(_0x5994ae){const _0x1ba0a4=_0x28c5,_0xb2c5ec=new URLSearchParams(window[_0x1ba0a4(0xc5)][_0x1ba0a4(0xb7)]);return _0xb2c5ec[_0x1ba0a4(0xee)](_0x5994ae);}async function initPlayer(){const _0x4f1986=_0x28c5,_0x4facd4={'JijVN':_0x4f1986(0xf8),'kkgDF':_0x4f1986(0xf4),'floil':_0x4f1986(0xc0),'lGwGj':_0x4f1986(0xab),'tGtWd':_0x4f1986(0xd0)+_0x4f1986(0xe8),'brVnx':_0x4f1986(0xbb),'vlCDR':_0x4f1986(0xcc),'crsTZ':_0x4f1986(0xdc)+_0x4f1986(0xb5),'CAJGa':_0x4f1986(0xad)+_0x4f1986(0xe5),'pumls':_0x4f1986(0xbc),'qBBvQ':_0x4f1986(0xbe),'mXsMA':_0x4f1986(0xc4),'nObTB':_0x4f1986(0xe0),'MUEDO':function(_0x39a196,_0x440406){return _0x39a196(_0x440406);},'QrDyZ':_0x4f1986(0xb0)+_0x4f1986(0xf2)+_0x4f1986(0xe1),'jnUIi':function(_0x2ff778,_0xb2868a){return _0x2ff778(_0xb2868a);},'dPqrT':_0x4f1986(0xec)+_0x4f1986(0xe9)+_0x4f1986(0xaf)+_0x4f1986(0xd4)+_0x4f1986(0xf6)},_0x35c754=document[_0x4f1986(0xb6)+_0x4f1986(0xe2)](_0x4facd4[_0x4f1986(0xf1)]),_0x31e04a=_0x35c754['ui'],_0x183794=_0x31e04a[_0x4f1986(0xef)+'s'](),_0x2ecf17=_0x183794[_0x4f1986(0xbd)](),_0x413b1f={'controlPanelElements':[_0x4facd4[_0x4f1986(0xf5)],_0x4facd4[_0x4f1986(0xd5)],_0x4facd4[_0x4f1986(0xb1)],_0x4facd4[_0x4f1986(0xc3)],_0x4facd4[_0x4f1986(0xc2)],_0x4facd4[_0x4f1986(0xbf)],_0x4facd4[_0x4f1986(0xb3)],_0x4facd4[_0x4f1986(0xd2)]],'overflowMenuButtons':[_0x4facd4[_0x4f1986(0xc9)],_0x4facd4[_0x4f1986(0xd6)],_0x4facd4[_0x4f1986(0xc2)],_0x4facd4[_0x4f1986(0xd8)]]};_0x31e04a[_0x4f1986(0xda)](_0x413b1f),window[_0x4f1986(0xe7)]=_0x2ecf17,window['ui']=_0x31e04a,_0x2ecf17[_0x4f1986(0xcf)+_0x4f1986(0xc6)](_0x4facd4[_0x4f1986(0xb2)],onPlayerErrorEvent),_0x183794[_0x4f1986(0xcf)+_0x4f1986(0xc6)](_0x4facd4[_0x4f1986(0xb2)],onUIErrorEvent);const _0x52a546=_0x4facd4[_0x4f1986(0xcb)](getQueryParam,'id'),_0x82254f=_0x4facd4[_0x4f1986(0xcb)](getManifestUri,_0x52a546);if(_0x82254f)try{await _0x2ecf17[_0x4f1986(0xce)](_0x82254f),console[_0x4f1986(0xb4)](_0x4facd4[_0x4f1986(0xdd)]);}catch(_0x85a1f3){_0x4facd4[_0x4f1986(0xdf)](onPlayerError,_0x85a1f3);}else console[_0x4f1986(0xe0)](_0x4facd4[_0x4f1986(0xc8)]);}function _0x4284(){const _0x5a94ec=['196944JZGmam','quality','captions','getPlayer','cast','vlCDR','mute','925148MDfgDt','brVnx','tGtWd','language','location','stener','AGWIp','dPqrT','pumls','object','MUEDO','fullscreen','1645mEbQtx','load','addEventLi','time_and_d','code','CAJGa','1234686uMxUBM','given\x20chan','floil','qBBvQ','MAJAv','mXsMA','detail','configure','250146nNlLEL','picture_in','QrDyZ','3454059whdrAu','jnUIi','error','en\x20loaded!','ById','oaded','LXFCQ','enu','Unable\x20to\x20','player','uration','t\x20URI\x20foun','1580000AmakBN','load\x20the\x20U','No\x20manifes','gVFsd','get','getControl','shaka-ui-l','JijVN','has\x20now\x20be','WEQIT','play_pause','kkgDF','nel\x20id.','I\x20library!','video','spacer','Error\x20code','overflow_m','54HOjHVb','d\x20for\x20the\x20','The\x20video\x20','lGwGj','nObTB','crsTZ','log','_picture','getElement','search','oad-failed','5640qbgFEB'];_0x4284=function(){return _0x5a94ec;};return _0x4284();}function onPlayerErrorEvent(_0x2fabde){const _0x2ff8e9=_0x28c5,_0x257490={'WEQIT':function(_0x2e4e0f,_0x3ae8d3){return _0x2e4e0f(_0x3ae8d3);}};_0x257490[_0x2ff8e9(0xf3)](onPlayerError,_0x2fabde[_0x2ff8e9(0xd9)]);}function onPlayerError(_0x2cac4b){const _0x529fb1=_0x28c5,_0x34d1ae={'LXFCQ':_0x529fb1(0xac),'gVFsd':_0x529fb1(0xca)};console[_0x529fb1(0xe0)](_0x34d1ae[_0x529fb1(0xe4)],_0x2cac4b[_0x529fb1(0xd1)],_0x34d1ae[_0x529fb1(0xed)],_0x2cac4b);}function onUIErrorEvent(_0x189927){const _0x985e20=_0x28c5,_0xc041a3={'AGWIp':function(_0x5948fd,_0x11eab2){return _0x5948fd(_0x11eab2);}};_0xc041a3[_0x985e20(0xc7)](onPlayerError,_0x189927[_0x985e20(0xd9)]);}function initFailed(_0x1ba168){const _0x3558f5=_0x28c5,_0x592cc6={'MAJAv':_0x3558f5(0xe6)+_0x3558f5(0xeb)+_0x3558f5(0xf7)};console[_0x3558f5(0xe0)](_0x592cc6[_0x3558f5(0xd7)]);}function _0x28c5(_0x3b6a,_0x1f260a){const _0x4d1c7d=_0x4284();return _0x28c5=function(_0x4c255e,_0x5b76e9){_0x4c255e=_0x4c255e-(-0x2*-0x2c+-0x2113+0xe1*0x26);let _0x465698=_0x4d1c7d[_0x4c255e];return _0x465698;},_0x28c5(_0x3b6a,_0x1f260a);}document[_0x313eaf(0xcf)+_0x313eaf(0xc6)](_0x313eaf(0xf0)+_0x313eaf(0xe3),initPlayer),document[_0x313eaf(0xcf)+_0x313eaf(0xc6)](_0x313eaf(0xf0)+_0x313eaf(0xb8),initFailed);
+//
 </script>
 
 </body>
