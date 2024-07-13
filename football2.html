@@ -13,7 +13,7 @@
 <body>
 <div id="player-container">
     <div data-shaka-player-container class="shaka-video-container">
-        <video autoplay data-shaka-player id='video' poster="https://i.ibb.co/dW8vYhg/IMG-20240620-185727.jpg"></video>
+        <video autoplay data-shaka-player id='video' poster="#"></video>
     </div>
 </div>
 <script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
@@ -56,18 +56,6 @@
         } else {
             console.error('No manifest URI found for the given channel id.');
         }
-
-        // Add logo to the video container
-        const logo = document.createElement('img');
-        logo.src = 'https://i.ibb.co/7VF2dfy/1000000077-removebg-preview.png';
-        logo.alt = 'Logo';
-        logo.className = 'logo';
-        logo.addEventListener('click', function() {
-            window.location.href = 'https://telegram.me/livecrichdofficial';
-        });
-
-        const videoContainer = document.querySelector('.shaka-video-container');
-        videoContainer.appendChild(logo);
     }
 
     function onPlayerErrorEvent(errorEvent) {
