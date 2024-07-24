@@ -1,6 +1,6 @@
 const channelData = {
   "Usanetwork": {
-    "file": "https://cfrt.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(usa-west)/master.mpd%3D%22AACL%22%29%29",
+    "file": "https://cfrt.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(usa-west)/master.mpd",
     "drm": {
       "clearkey": {
         "keyId": "252a671825ba31ec8433f978c32ccf6d",
@@ -8,12 +8,12 @@ const channelData = {
       }
     }
   },
-  "skyuno": {
-    "file": "https://linear301-it-dash1-prd-akg0.cdn13.skycdp.com/016a/31023/FHD/skysportuno/master_stereo.mpd",
+  "pcktv": {
+    "file": "https://g006-sle-us-cmaf-prd-ll.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5008424-709072-48e1d602bd0)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0036dc70e4d659fe5ae57b52793a1ff3",
-        "key": "55517f806b6be917c2bf0e9cf9acc44f"
+        "keyId": "0022bfeadee0fefd92ca1bd188e1fe50",
+        "key": "309663955ba6c06a176d60bdb1d4f379"
       }
     }
   },
