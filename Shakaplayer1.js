@@ -18,11 +18,11 @@ const channelData = {
     }
   },
   "ctz": {
-    "file": "https://dash2.antik.sk/stream/nvidia_ct_sport/playlist_cbcs.mpd",
+    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc1021n07j)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "11223344556677889900112233445566",
-        "key": "11223344556677889900112233445566"
+        "keyId": "d2f92f6b7edc9a1a05d393ba0c20ef9e",
+        "key": "002046c9a49b9ab1cdb6616bec5d26c3"
       }
     }
   },
