@@ -21,8 +21,8 @@ const channelData = {
     "file": "https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc1021n07j)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "d2f92f6b7edc9a1a05d393ba0c20ef9e",
-        "key": "002046c9a49b9ab1cdb6616bec5d26c3"
+        "keyId": "002046c9a49b9ab1cdb6616bec5d26c3",
+        "key": "d2f92f6b7edc9a1a05d393ba0c20ef9e"
       }
     }
   },
