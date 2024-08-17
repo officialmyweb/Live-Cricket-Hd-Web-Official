@@ -8,30 +8,30 @@ const channelData = {
       }
     }
   },
-  "pcktv": {
-    "file": "https://g006-sle-us-cmaf-prd-ll.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5008424-709072-48e1d602bd0)/master.mpd",
+  "not": {
+    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012828-713953-48f23dff3e1)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0022bfeadee0fefd92ca1bd188e1fe50",
-        "key": "309663955ba6c06a176d60bdb1d4f379"
+        "keyId": "0022c83bb968d8769d01aef637013666",
+        "key": "f7067e39bf3568c603c91f4307128fd0"
       }
     }
   },
-  "ctz": {
-    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc1021n07j)/master.mpd",
+  "new": {
+    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012827-713952-48f23d0b1a0)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "002046c9a49b9ab1cdb6616bec5d26c3",
-        "key": "d2f92f6b7edc9a1a05d393ba0c20ef9e"
+        "keyId": "002257805646192685782d498e690d18",
+        "key": "18d088be290a0d8a6c520828d6e0a0a8"
       }
     }
   },
-  "tv4": {
-    "file": "https://director.streaming.telia.com/tvm-packager-prod/group2/61a4859b79019af4abf1009d/manifest.mpd?adap=default",
+  "Everton": {
+    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012826-713951-48f23c16f5f)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "b09d157d18ab51b9923a3d5abdeefd52",
-        "key": "5a29bb3c705edea6941a5b1d575ac316"
+        "keyId": "00220ebf0d24ad67524767d7d692294b",
+        "key": "a5d162ca0c13636a235181df02c50fef"
       }
     }
   }
