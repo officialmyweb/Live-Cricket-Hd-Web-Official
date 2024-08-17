@@ -34,5 +34,14 @@ const channelData = {
         "key": "a5d162ca0c13636a235181df02c50fef"
       }
     }
+  },
+  "nbc": {
+    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(knbc)/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "0045a118e231f1326bcdb45350b1ceaa",
+        "key": "8c13afbfa54ea37a368b8b859021f6e3"
+      }
+    }
   }
 };
