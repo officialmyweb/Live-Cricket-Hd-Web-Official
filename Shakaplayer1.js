@@ -26,12 +26,12 @@ const channelData = {
       }
     }
   },
-  "Everton": {
-    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012826-713951-48f23c16f5f)/master.mpd",
+  "mancity": {
+    "file": "https://g006-sle-us-cmaf-prd-fy.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012834-713959-48f243b8167)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "00220ebf0d24ad67524767d7d692294b",
-        "key": "a5d162ca0c13636a235181df02c50fef"
+        "keyId": "0022e9db7217881c31710d2a8ccd8f0b",
+        "key": "b36ffa718bbb61c3ea830445ccbc60db"
       }
     }
   },
