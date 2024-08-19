@@ -26,12 +26,12 @@ const channelData = {
       }
     }
   },
-  "mancity": {
-    "file": "https://g006-sle-us-cmaf-prd-fy.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012834-713959-48f243b8167)/master.mpd",
+  "laliga": {
+    "file": "https://live.ll.ww.aiv-cdn.net/OTTB/dub-nitro/live/clients/dash/enc/wjgklbtvhh/out/v1/659736a1e24c40e4865a80ffd75e7de7/cenc.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0022e9db7217881c31710d2a8ccd8f0b",
-        "key": "b36ffa718bbb61c3ea830445ccbc60db"
+        "keyId": "43d1c3b25207ff38b22ccfe17d302367",
+        "key": "7b1f85f6e81059473b114c16a25c829a"
       }
     }
   },
