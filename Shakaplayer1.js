@@ -17,12 +17,12 @@ const channelData = {
       }
     }
   },
-  "new": {
-    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012827-713952-48f23d0b1a0)/master.mpd",
+  "laligatv": {
+    "file": "https://ottb.live.cf.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/fpndxmzw6o/out/v1/70a50b1bda944628b8e7e66ab4069419/cenc.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "002257805646192685782d498e690d18",
-        "key": "18d088be290a0d8a6c520828d6e0a0a8"
+        "keyId": "fc12a94c41e0885dbea8a8d94f0a277d",
+        "key": "fc045df077e7669666b1b230e9aa3901"
       }
     }
   },
