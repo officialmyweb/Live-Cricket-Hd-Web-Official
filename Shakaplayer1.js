@@ -26,7 +26,7 @@ const channelData = {
       }
     }
   },
-  "aston": {
+  "forest": {
     "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012857-713987-48f259a7543)/master.mpd",
     "drm": {
       "clearkey": {
