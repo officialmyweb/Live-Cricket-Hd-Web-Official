@@ -70,5 +70,14 @@ const channelData = {
         "key": "978d4eda78a9f2aa6e885c050f997880"
       }
     }
+  },
+  "wwe": {
+    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013483-714694-48f4aea7886)/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "0022ba6ec3dc8fe82a017c1af5f8bfdf",
+        "key": "8e5b32020bcc787907f3755c7a4e996a"
+      }
+    }
   }
 };
