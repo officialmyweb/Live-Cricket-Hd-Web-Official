@@ -26,12 +26,12 @@ const channelData = {
       }
     }
   },
-  "laliga": {
-    "file": "https://live.ll.ww.aiv-cdn.net/OTTB/dub-nitro/live/clients/dash/enc/wjgklbtvhh/out/v1/659736a1e24c40e4865a80ffd75e7de7/cenc.mpd",
+  "aston": {
+    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012857-713987-48f259a7543)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "43d1c3b25207ff38b22ccfe17d302367",
-        "key": "7b1f85f6e81059473b114c16a25c829a"
+        "keyId": "00222ac5cf4308d176d307a8698b2a6f",
+        "key": "c2af412188a6f81b4fa07b0a0e43bab6"
       }
     }
   },
@@ -41,6 +41,33 @@ const channelData = {
       "clearkey": {
         "keyId": "0045a118e231f1326bcdb45350b1ceaa",
         "key": "8c13afbfa54ea37a368b8b859021f6e3"
+      }
+    }
+  },
+  "brent": {
+    "file": "https://g006-sle-us-cmaf-prd-fy.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012854-713984-48f256cae80)/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "0022f5c00f799a865e817db87b149283",
+        "key": "2556da2ffdc44b7423465b31b6bf6d0a"
+      }
+    }
+  },
+  "town": {
+    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012855-713985-48f257bf0c1)/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "0022f8f0ef71c904135d8dc1d9c16d63",
+        "key": "c36e5c31ec4d87bd64da4b438ef9688e"
+      }
+    }
+  },
+  "aston": {
+    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012856-713986-48f258b3302)/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "0022e0fad9ca014782238a7e0122f175",
+        "key": "978d4eda78a9f2aa6e885c050f997880"
       }
     }
   }
