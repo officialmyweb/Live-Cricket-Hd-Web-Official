@@ -26,12 +26,12 @@ const channelData = {
       }
     }
   },
-  "forest": {
-    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012857-713987-48f259a7543)/master.mpd",
+  "arena": {
+    "file": "https://webtvstream.bhtelecom.ba/hls6/arena1.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "00222ac5cf4308d176d307a8698b2a6f",
-        "key": "c2af412188a6f81b4fa07b0a0e43bab6"
+        "keyId": "c18b6aa739be4c0b774605fcfb5d6b68",
+        "key": "e41c3a6f7532b2e3a828d9580124c89d"
       }
     }
   },
