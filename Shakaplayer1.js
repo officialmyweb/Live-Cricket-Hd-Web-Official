@@ -44,12 +44,12 @@ const channelData = {
       }
     }
   },
-  "brent": {
-    "file": "https://g006-sle-us-cmaf-prd-fy.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012854-713984-48f256cae80)/master.mpd",
+  "fox1": {
+    "file": "https://linear.stvacdn.spectrum.com/LIVE/5239/bpk-tv/00700/drm/manifest.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0022f5c00f799a865e817db87b149283",
-        "key": "2556da2ffdc44b7423465b31b6bf6d0a"
+        "keyId": "b558d7b4834f577c86e3ca8422526da8",
+        "key": "2faf35e38c6f2c5476e90666b4702fa9"
       }
     }
   },
