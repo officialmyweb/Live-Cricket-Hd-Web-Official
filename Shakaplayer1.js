@@ -53,12 +53,12 @@ const channelData = {
       }
     }
   },
-  "town": {
-    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012855-713985-48f257bf0c1)/master.mpd",
+  "fox2": {
+    "file": "https://linear.stvacdn.spectrum.com/LIVE/5099/bpk-tv/00564/drm/manifest.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0022f8f0ef71c904135d8dc1d9c16d63",
-        "key": "c36e5c31ec4d87bd64da4b438ef9688e"
+        "keyId": "791913a3304b58ba855fffbb7095a36c",
+        "key": "3d6c3ecfdbb0fbdb5f736703bea66ca1"
       }
     }
   },
