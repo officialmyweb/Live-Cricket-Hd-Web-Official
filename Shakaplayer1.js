@@ -62,12 +62,12 @@ const channelData = {
       }
     }
   },
-  "aston": {
-    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5012856-713986-48f258b3302)/master.mpd",
+  "tv": {
+    "file": "https://cache01.zapitv.com/live/eds_c2/la1_4k/dash_live_enc/la1_4k.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0022e0fad9ca014782238a7e0122f175",
-        "key": "978d4eda78a9f2aa6e885c050f997880"
+        "keyId": "a3abc44525eef3b0a7af9138a9dbe34a",
+        "key": "7740f8ae4223ce5ba293028f7f78f1c1"
       }
     }
   },
