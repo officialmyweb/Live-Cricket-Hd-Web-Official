@@ -26,12 +26,12 @@ const channelData = {
       }
     }
   },
-  "arena": {
-    "file": "https://webtvstream.bhtelecom.ba/hls6/arena1.mpd",
+  "town": {
+    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013634-714860-48f53ea8cec)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "c18b6aa739be4c0b774605fcfb5d6b68",
-        "key": "e41c3a6f7532b2e3a828d9580124c89d"
+        "keyId": "0022679ed976fa2369a533b9da38e3f5",
+        "key": "7b2b0914b6608a4af0ad58969cdb283f"
       }
     }
   },
@@ -77,6 +77,33 @@ const channelData = {
       "clearkey": {
         "keyId": "0022ba6ec3dc8fe82a017c1af5f8bfdf",
         "key": "8e5b32020bcc787907f3755c7a4e996a"
+      }
+    }
+  },
+    "west": {
+    "file": "https://g006-sle-us-cmaf-prd-fy.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013633-714859-48f53db4aab)/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "0022ca5f216dc5017036cc5de1015d0b",
+        "key": "50e7baef53979b94301ac82ccfbfc6fb"
+      }
+    }
+  },
+  "pool": {
+    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013778-715026-48f5c7fd192)/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "00220bb5b2dcecce941434e11fb0361b",
+        "key": "55fceb598e550af186a88d03da5f6486"
+      }
+    }
+  },
+  "crash": {
+    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013635-714861-48f53f9cf2d)/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "0022ce503b9e52a467319739208a38eb",
+        "key": "3c383c36b466fe74fbd3a08eeb7a2686"
       }
     }
   }
