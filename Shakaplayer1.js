@@ -8,12 +8,12 @@ const channelData = {
       }
     }
   },
-  "ssc": {
-    "file": "https://ssc1-ak.akamaized.net/out/v1/c696e4819b55414388a1a487e8a45ca1/index.mpd",
+  "df1": {
+    "file": "https://live.ll.ww.aiv-cdn.net/OTTB/dub-nitro/live/clients/dash/enc/cqbcvgkb83/out/v1/4dbe05ecfb1540448d82d68eeebfbb1c/cenc.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "d84c325f36814f39bbe59080272b10c3",
-        "key": "550727de4c96ef1ecff874905493580f"
+        "keyId": "1061be12d303247426ec25e8369b2647",
+        "key": "bd622b0e610295de3b0bccb850ccaaaa"
       }
     }
   },
