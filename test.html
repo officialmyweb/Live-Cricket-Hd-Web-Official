@@ -38,23 +38,14 @@
 <body>
   <br>
   <select id="video-select">
-    <option value="feed_1" selected="">Feed 1</option>
-    <option value="feed_2">Feed 2</option>
-    <option value="feed_3">Feed 3</option>
-    <option value="feed_4">Feed 4</option>
-    <option value="feed_5">Feed 5</option>
-    <option value="feed_6">Feed 6</option>
-    <option value="feed_7">Feed 7</option>
-    <option value="feed_8">Feed 8</option>
-    <option value="feed_9">Feed 9</option>
-    <option value="feed_10">Feed 10</option>
-    <option value="feed_11">Feed 11</option>
-    <option value="feed_12">Feed 12</option>
-    <option value="feed_13">Feed 13</option>
-    <option value="feed_14">Feed 14</option>
-    <option value="feed_15">Feed 15</option>
-    <option value="feed_16">Feed 16</option>
-    <option value="feed_17">Feed 17</option>
+    <option value="English" selected="">English</option>
+    <option value="Hindi">Hindi</option>
+    <option value="Haryanvi">Haryanvi</option>
+    <option value="Bhojpuri">Bhojpuri</option>
+    <option value="Telugu">Telugu</option>
+    <option value="Tamil">Tamil</option>
+    <option value="Bengali">Bengali</option>
+    <option value="Kannada">Kannada</option>
   </select>
 
   <button id="language-switch">Select Your Feed Here</button>
@@ -64,24 +55,15 @@
   <script>if(confirm("Join Our Telegram Channel @livecrichdofficial")) { window.location.href = "https://telegram.me/livecrichdofficial" }
     document.addEventListener("DOMContentLoaded", function() {
       var videoSources = {
-      "feed_1": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2100310/uhd_akamai_ctv_avc_eng_olympic_feed1_270724/index.m3u8",
-      "feed_2": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2100311/uhd_akamai_ctv_avc_eng_olympic_feed2_270724/index.m3u8",
-      "feed_3": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2100311/uhd_akamai_ctv_avc_eng_olympic_feed3_270724/index.m3u8",
-      "feed_4": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112593/uhd_akamai_ctv_avc_eng_olympic_feed4_270724/index.m3u8",
-      "feed_5": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112593/uhd_akamai_ctv_avc_eng_olympic_feed5_270724/index.m3u8",
-      "feed_6": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112594/uhd_akamai_ctv_avc_eng_olympic_feed6_270724/index.m3u8",
-      "feed_7": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112594/uhd_akamai_ctv_avc_eng_olympic_feed7_270724/index.m3u8",
-      "feed_8": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112595/uhd_akamai_ctv_avc_eng_olympic_feed8_270724/index.m3u8",
-      "feed_9": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112595/uhd_akamai_ctv_avc_eng_olympic_feed9_270724/index.m3u8",
-      "feed_10": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112596/uhd_akamai_ctv_avc_eng_olympic_feed10_270724/index.m3u8",
-      "feed_11": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112596/uhd_akamai_ctv_avc_eng_olympic_feed11_270724/index.m3u8",
-      "feed_12": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112597/uhd_akamai_ctv_avc_eng_olympic_feed12_270724/index.m3u8",
-      "feed_13": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112598/uhd_akamai_ctv_avc_eng_olympic_feed13_270724/index.m3u8",
-      "feed_14": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112598/uhd_akamai_ctv_avc_eng_olympic_feed14_270724/index.m3u8",
-      "feed_15": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112598/uhd_akamai_ctv_avc_eng_olympic_feed15_270724/index.m3u8",
-      "feed_16": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112599/uhd_akamai_ctv_avc_eng_olympic_feed16_270724/index.m3u8",
-      "feed_17": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112599/uhd_akamai_ctv_avc_eng_olympic_feed17_270724/index.m3u8"
-    };
+      "English": "https://prod-sports-eng-gm.jiocinema.com/hls/live/2100297/hd_akamai_iosmob_avc_eng_indvsban_190924/master.m3u8",
+      "Hindi": "https://prod-sports-hin-gm.jiocinema.com/hls/live/2100322/hd_akamai_iosmob_avc_hin_indvsban_190924/master.m3u8",
+      "Haryanvi": "https://prod-sports-south-gm.jiocinema.com/hls/live/2109699/hd_akamai_iosmob_avc_odia_indvsban_190924/master.m3u8",
+      "Bhojpuri": "https://prod-sports-north-gm.jiocinema.com/hls/live/2109761/hd_akamai_iosmob_avc_bhoj_indvsban_190924/master.m3u8",
+      "Telugu": "https://prod-sports-south-gm.jiocinema.com/hls/live/2109717/hd_akamai_iosmob_avc_tel_indvsban_190924/master.m3u8",
+      "Tamil": "https://prod-sports-south-gm.jiocinema.com/hls/live/2109711/hd_akamai_iosmob_avc_tam_indvsban_190924/master.m3u8",
+      "Bengali": "https://prod-sports-north-gm.jiocinema.com/hls/live/2109773/hd_akamai_iosmob_avc_ben_indvsban_190924/master.m3u8",
+      "Kannada": "https://prod-sports-south-gm.jiocinema.com/hls/live/2109723/hd_akamai_iosmob_avc_kan_indvsban_190924/master.m3u8",
+       };
 
       var playerInstance = jwplayer("video");
 
