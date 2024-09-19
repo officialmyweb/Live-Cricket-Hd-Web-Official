@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram-Live-Cric-Hd</title>
+  <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .jwplayer {
+      position: absolute !important;
+    }
+
+    #video-selector {
+      margin: 10px;
+    }
+
+    #language-switch {
+      padding: 10px 20px;
+      background-color: #007bff; /* Blue color, you can change this */
+      color: #fff; /* White text color */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    #language-switch:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+  </style>
+</head>
+<body>
+  <br>
+  <select id="video-select">
+    <option value="feed_1" selected="">Feed 1</option>
+    <option value="feed_2">Feed 2</option>
+    <option value="feed_3">Feed 3</option>
+    <option value="feed_4">Feed 4</option>
+    <option value="feed_5">Feed 5</option>
+    <option value="feed_6">Feed 6</option>
+    <option value="feed_7">Feed 7</option>
+    <option value="feed_8">Feed 8</option>
+    <option value="feed_9">Feed 9</option>
+    <option value="feed_10">Feed 10</option>
+    <option value="feed_11">Feed 11</option>
+    <option value="feed_12">Feed 12</option>
+    <option value="feed_13">Feed 13</option>
+    <option value="feed_14">Feed 14</option>
+    <option value="feed_15">Feed 15</option>
+    <option value="feed_16">Feed 16</option>
+    <option value="feed_17">Feed 17</option>
+  </select>
+
+  <button id="language-switch">Select Your Feed Here</button>
+
+  <div id="video"></div>
+
+  <script>if(confirm("Join Our Telegram Channel @finallylivestreaming")) { window.location.href = "https://telegram.me/finallylivestreaming" }
+    document.addEventListener("DOMContentLoaded", function() {
+      var videoSources = {
+      "feed_1": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2100310/uhd_akamai_ctv_avc_eng_olympic_feed1_270724/index.m3u8",
+      "feed_2": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2100311/uhd_akamai_ctv_avc_eng_olympic_feed2_270724/index.m3u8",
+      "feed_3": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2100311/uhd_akamai_ctv_avc_eng_olympic_feed3_270724/index.m3u8",
+      "feed_4": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112593/uhd_akamai_ctv_avc_eng_olympic_feed4_270724/index.m3u8",
+      "feed_5": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112593/uhd_akamai_ctv_avc_eng_olympic_feed5_270724/index.m3u8",
+      "feed_6": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112594/uhd_akamai_ctv_avc_eng_olympic_feed6_270724/index.m3u8",
+      "feed_7": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112594/uhd_akamai_ctv_avc_eng_olympic_feed7_270724/index.m3u8",
+      "feed_8": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112595/uhd_akamai_ctv_avc_eng_olympic_feed8_270724/index.m3u8",
+      "feed_9": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112595/uhd_akamai_ctv_avc_eng_olympic_feed9_270724/index.m3u8",
+      "feed_10": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112596/uhd_akamai_ctv_avc_eng_olympic_feed10_270724/index.m3u8",
+      "feed_11": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112596/uhd_akamai_ctv_avc_eng_olympic_feed11_270724/index.m3u8",
+      "feed_12": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112597/uhd_akamai_ctv_avc_eng_olympic_feed12_270724/index.m3u8",
+      "feed_13": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112598/uhd_akamai_ctv_avc_eng_olympic_feed13_270724/index.m3u8",
+      "feed_14": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112598/uhd_akamai_ctv_avc_eng_olympic_feed14_270724/index.m3u8",
+      "feed_15": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112598/uhd_akamai_ctv_avc_eng_olympic_feed15_270724/index.m3u8",
+      "feed_16": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112599/uhd_akamai_ctv_avc_eng_olympic_feed16_270724/index.m3u8",
+      "feed_17": "https://prod-sports-eng-fa.jiocinema.com/hls/live/2112599/uhd_akamai_ctv_avc_eng_olympic_feed17_270724/index.m3u8"
+    };
+
+      var playerInstance = jwplayer("video");
+
+      document.getElementById("video-select").addEventListener("change", function() {
+        var selectedValue = this.value;
+        var videoSource = videoSources[selectedValue];
+
+        playerInstance.load([{ file: videoSource }]);
+        playerInstance.play();
+      });
+
+      document.getElementById("language-switch").addEventListener("click", function() {
+        var selectedValue = document.getElementById("video-select").value;
+        var currentIndex = Object.keys(videoSources).indexOf(selectedValue);
+        var nextIndex = (currentIndex + 1) % Object.keys(videoSources).length;
+        var nextLanguage = Object.keys(videoSources)[nextIndex];
+        document.getElementById("video-select").value = nextLanguage;
+
+        var videoSource = videoSources[nextLanguage];
+        playerInstance.load([{ file: videoSource }]);
+        playerInstance.play();
+      });
+
+      var selectedValue = document.getElementById("video-select").value;
+      var videoSource = videoSources[selectedValue];
+
+      playerInstance.setup({
+        autostart: true,
+        mute: false,
+        playlist: [{ file: videoSource }]
+      });
+    });
+  </script>
+
+  <div style="background-color: #0074d9; text-align: center; padding: 10px;">
+    <a href="https://telegram.me/finallylivestreaming" target="_blank">
+      <button id="joinTelegramButton" style="background-color: #fff; color: #0074d9; border: 2px solid #0074d9; padding: 5px 10px;">JOIN TELEGRAM</button>
+    </a>
+  </div>
+
+</body>
+</html>
