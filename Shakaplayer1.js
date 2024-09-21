@@ -26,12 +26,12 @@ const channelData = {
       }
     }
   },
-  "town": {
-    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013634-714860-48f53ea8cec)/master.mpd",
+  "brent": {
+    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013866-715128-48f61be97f8)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0022679ed976fa2369a533b9da38e3f5",
-        "key": "7b2b0914b6608a4af0ad58969cdb283f"
+        "keyId": "0022acf632887f4c9fa8441fde8352b3",
+        "key": "dda7a5453523f26161345e5486e43474"
       }
     }
   },
@@ -80,30 +80,30 @@ const channelData = {
       }
     }
   },
-    "west": {
-    "file": "https://g006-sle-us-cmaf-prd-fy.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013633-714859-48f53db4aab)/master.mpd",
+    "everton": {
+    "file": "https://g006-sle-us-cmaf-prd-fy.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013863-715125-48f6190d135)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0022ca5f216dc5017036cc5de1015d0b",
-        "key": "50e7baef53979b94301ac82ccfbfc6fb"
+        "keyId": "00226a17b7e6f5178abb2ae3b951fd4b",
+        "key": "f5a8176bf7e66c5b456ac1b8ff40f913"
       }
     }
   },
-  "pool": {
-    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013778-715026-48f5c7fd192)/master.mpd",
+  "new": {
+    "file": "https://g006-sle-us-cmaf-prd-fy.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013865-715127-48f61af55b7)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "00220bb5b2dcecce941434e11fb0361b",
-        "key": "55fceb598e550af186a88d03da5f6486"
+        "keyId": "0022c7155c95dd2903f051d4168e0c1e",
+        "key": "5d6da1f287d13c24bc130d8389d68b69"
       }
     }
   },
-  "crash": {
-    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013635-714861-48f53f9cf2d)/master.mpd",
+  "aston": {
+    "file": "https://g006-sle-us-cmaf-prd-fy.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013864-715126-48f61a01376)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0022ce503b9e52a467319739208a38eb",
-        "key": "3c383c36b466fe74fbd3a08eeb7a2686"
+        "keyId": "0022f273ed6fb5dff81d5077d31f5828",
+        "key": "abe8518e8479787274f3fc12ed22190d"
       }
     }
   }
