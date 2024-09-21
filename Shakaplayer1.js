@@ -17,6 +17,15 @@ const channelData = {
       }
     }
   },
+    "telusa": {
+    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(kvea)/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "dfb59142ce523a6c900758d5ee4c7997",
+        "key": "bd2d684e590815190eda056a6d9618bc"
+      }
+    }
+  },
   "laligatv": {
     "file": "https://ottb.live.cf.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/fpndxmzw6o/out/v1/70a50b1bda944628b8e7e66ab4069419/cenc.mpd",
     "drm": {
