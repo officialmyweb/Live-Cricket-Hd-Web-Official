@@ -62,12 +62,12 @@ const channelData = {
       }
     }
   },
-  "tv": {
-    "file": "https://cache01.zapitv.com/live/eds_c2/la1_4k/dash_live_enc/la1_4k.mpd",
+  "nbc2": {
+    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(universo-east)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "a3abc44525eef3b0a7af9138a9dbe34a",
-        "key": "7740f8ae4223ce5ba293028f7f78f1c1"
+        "keyId": "232d71bb013d39ffb92ee8c576fb7e8e",
+        "key": "087408a48be8d57046c3868b37ea90ba"
       }
     }
   },
