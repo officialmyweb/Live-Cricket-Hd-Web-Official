@@ -26,7 +26,7 @@ const channelData = {
       }
     }
   },
-  "brent": {
+  "town": {
     "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013866-715128-48f61be97f8)/master.mpd",
     "drm": {
       "clearkey": {
@@ -106,5 +106,14 @@ const channelData = {
         "key": "abe8518e8479787274f3fc12ed22190d"
       }
     }
-  }
+  },
+    "brent": {
+    "file": "https://g006-sle-us-cmaf-prd-fy.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013868-715130-48f61dd1c7a)/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "0022543b31c3eb0fd39af9d972377431",
+        "key": "dba2e6e194f7f22bda72364fd0eaeea9"
+      }
+    }
+  },
 };
