@@ -18,7 +18,7 @@
 </div>
 <script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
 
-<!-- First Script: Handle URL, Channel Selection, and DRM Configuration -->
+<!-- First Script: Handle URL, Channel Selection, DRM Configuration, and Logo Addition -->
 <script>
     // Function to get the URL parameter by name
     function getUrlParameter(name) {
@@ -45,7 +45,9 @@
         console.error('Channel not found or invalid channel ID');
     }
 
-    const logo = document.createElement('img');
+    // Add logo to the video container
+    function addLogo() {
+        const logo = document.createElement('img');
         logo.src = 'https://i.ibb.co/7VF2dfy/1000000077-removebg-preview.png';
         logo.alt = 'Logo';
         logo.className = 'logo';
@@ -56,6 +58,9 @@
         const videoContainer = document.querySelector('.shaka-video-container');
         videoContainer.appendChild(logo);
     }
+
+    // Call the function to add the logo
+    addLogo();
 </script>
 
 <!-- Second Script: Initialize Player and Configure UI -->
@@ -103,21 +108,9 @@
         console.error('Unable to load the UI library!');
     }
 
-    function configureDRMAndAddLogo() {
-        const player = window.player;
-
-        if (drmKeys) {
-            player.configure({
-                drm: {
-                    clearKeys: drmKeys
-                }
-            });
-        }
-
-    // Initialize player and configure DRM and logo after UI is loaded
+    // Initialize player after UI is loaded
     document.addEventListener('shaka-ui-loaded', function() {
         initPlayer();
-        configureDRMAndAddLogo();
     });
 
     document.addEventListener('shaka-ui-load-failed', initFailed);
@@ -125,4 +118,3 @@
 
 </body>
 </html>
-
