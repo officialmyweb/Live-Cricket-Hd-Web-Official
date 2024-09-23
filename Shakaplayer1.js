@@ -89,12 +89,12 @@ const channelData = {
       }
     }
   },
-    "everton": {
-    "file": "https://g006-sle-us-cmaf-prd-fy.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013863-715125-48f6190d135)/master.mpd",
+    "ssc1": {
+    "file": "https://ssc1-ak.akamaized.net/out/v1/c696e4819b55414388a1a487e8a45ca1/index.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "00226a17b7e6f5178abb2ae3b951fd4b",
-        "key": "f5a8176bf7e66c5b456ac1b8ff40f913"
+        "keyId": "d84c325f36814f39bbe59080272b10c3",
+        "key": "550727de4c96ef1ecff874905493580f"
       }
     }
   },
