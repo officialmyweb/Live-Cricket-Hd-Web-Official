@@ -35,12 +35,12 @@ const channelData = {
       }
     }
   },
-  "town": {
-    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013866-715128-48f61be97f8)/master.mpd",
+  "jainik": {
+    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc1021n07j)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0022acf632887f4c9fa8441fde8352b3",
-        "key": "dda7a5453523f26161345e5486e43474"
+        "keyId": "002046c9a49b9ab1cdb6616bec5d26c3",
+        "key": "d2f92f6b7edc9a1a05d393ba0c20ef9e"
       }
     }
   },
