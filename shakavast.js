@@ -35,12 +35,12 @@ const channelData = {
       }
     }
   },
-  "dlaliga": {
-    "file": "https://live.ll.ww.aiv-cdn.net/OTTB/dub-nitro/live/clients/dash/enc/wjgklbtvhh/out/v1/659736a1e24c40e4865a80ffd75e7de7/cenc.mpd",
+  "wwe": {
+    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013483-714694-48f4aea7886)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "43d1c3b25207ff38b22ccfe17d302367",
-        "key": "7b1f85f6e81059473b114c16a25c829a"
+        "keyId": "0022ba6ec3dc8fe82a017c1af5f8bfdf",
+        "key": "8e5b32020bcc787907f3755c7a4e996a"
       }
     }
   },
