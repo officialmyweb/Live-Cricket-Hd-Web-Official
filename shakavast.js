@@ -35,12 +35,21 @@ const channelData = {
       }
     }
   },
-  "wwe": {
-    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013483-714694-48f4aea7886)/master.mpd",
+  "dazn1": {
+    "file": "https://ottb.live.cf.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/bmnelo5c7a/out/v1/3ce2cdc4589f46189322bd3717c77957/cenc.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0022ba6ec3dc8fe82a017c1af5f8bfdf",
-        "key": "8e5b32020bcc787907f3755c7a4e996a"
+        "keyId": "44dd9cd370b08a868ead115fe84ecfde",
+        "key": "bff19ab0a51cf14e848389b152913fd0"
+      }
+    }
+  },
+    "dazn2": {
+    "file": "https://ottb.live.cf.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/xnk4m9bnxt/out/v1/4ced7b7329a54652b9bb0521ed38bd4d/cenc.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "0eab5a3f3e3b4ba5d42d40ca30d17571",
+        "key": "f3f061ded9b70e8160590d5802ecda6d"
       }
     }
   },
