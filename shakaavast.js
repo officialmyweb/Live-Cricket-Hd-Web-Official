@@ -8,15 +8,6 @@ const channelData = {
       }
     }
   },
-  "laligatv2": {
-    "file": "https://ottb.live.cf.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/fpndxmzw6o/out/v1/70a50b1bda944628b8e7e66ab4069419/cenc.mpd",
-    "drm": {
-      "clearkey": {
-        "keyId": "fc12a94c41e0885dbea8a8d94f0a277d",
-        "key": "fc045df077e7669666b1b230e9aa3901"
-      }
-    }
-  },
     "telusa": {
     "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(kvea)/master.mpd",
     "drm": {
@@ -25,16 +16,7 @@ const channelData = {
         "key": "bd2d684e590815190eda056a6d9618bc"
       }
     }
-  },
-  "laligatv": {
-    "file": "https://ottb.live.cf.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/fpndxmzw6o/out/v1/70a50b1bda944628b8e7e66ab4069419/cenc.mpd",
-    "drm": {
-      "clearkey": {
-        "keyId": "fc12a94c41e0885dbea8a8d94f0a277d",
-        "key": "fc045df077e7669666b1b230e9aa3901"
-      }
-    }
-  },
+   },
   "jainik": {
     "file": "https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc1021n07j)/master.mpd",
     "drm": {
@@ -80,13 +62,4 @@ const channelData = {
       }
     }
   },
-  "wwe": {
-    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5013483-714694-48f4aea7886)/master.mpd",
-    "drm": {
-      "clearkey": {
-        "keyId": "0022ba6ec3dc8fe82a017c1af5f8bfdf",
-        "key": "8e5b32020bcc787907f3755c7a4e996a"
-      }
-    }
-  },    
 };
