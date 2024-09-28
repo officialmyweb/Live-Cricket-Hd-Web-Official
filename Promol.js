@@ -17,21 +17,21 @@ const channelData = {
       }
     }
    },
-  "fox2": {
-    "file": "https://linear.stvacdn.spectrum.com/LIVE/5099/bpk-tv/00564/drm/manifest.mpd",
+  "arena1": {
+    "file": "https://webtvstream.bhtelecom.ba/hls6/arena1.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "791913a3304b58ba855fffbb7095a36c",
-        "key": "3d6c3ecfdbb0fbdb5f736703bea66ca1"
+        "keyId": "c18b6aa739be4c0b774605fcfb5d6b68",
+        "key": "e41c3a6f7532b2e3a828d9580124c89d"
       }
     }
   },
-  "nbc2": {
-    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(universo-east)/master.mpd",
+  "arena2": {
+    "file": "https://webtvstream.bhtelecom.ba/hls6/arena2.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "232d71bb013d39ffb92ee8c576fb7e8e",
-        "key": "087408a48be8d57046c3868b37ea90ba"
+        "keyId": "c18b6aa739be4c0b774605fcfb5d6b68",
+        "key": "e41c3a6f7532b2e3a828d9580124c89d"
       }
     }
   },
