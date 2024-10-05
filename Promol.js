@@ -1,10 +1,10 @@
 const channelData = {
-  "Usanetwork": {
-    "file": "https://cfrt.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(usa-west)/master.mpd",
+  "go3": {
+    "file": "https://cdn9.tvplayhome.lt/live/eds2/VIP2/GO3_LIVE_DASH_AVC/VIP2.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "252a671825ba31ec8433f978c32ccf6d",
-        "key": "ee560759ecc8d2274df2e63fcef56915"
+        "keyId": "ad206bf45075406da1ccfd824b4667c9",
+        "key": "05093061005A5947C584AB77035ED678"
       }
     }
   },
