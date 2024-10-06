@@ -1,10 +1,10 @@
 const channelData = {
-  "go3": {
-    "file": "https://cdn9.tvplayhome.lt/live/eds2/VIP2/GO3_LIVE_DASH_AVC/VIP2.mpd",
+  "nfl": {
+    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(lc107a1ddy)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "ad206bf45075406da1ccfd824b4667c9",
-        "key": "05093061005A5947C584AB77035ED678"
+        "keyId": "002007110c69a23803173b50eab05f23",
+        "key": "590d6e8f4ca81319f9bb29104f571990"
       }
     }
   },
