@@ -12,13 +12,14 @@
 <body>
 <div id="player-container">
     <div data-shaka-player-container class="shaka-video-container">
-        <video autoplay data-shaka-player id='video' poster="#"></video>
+        <video autoplay data-shaka-player id='video' poster="https://i.ibb.co/wzxpfcC/IMG-20240601-170942.jpg"></video>
     </div>
 </div>
 <script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
 
 <script>
     if(confirm("Join Our Telegram Channel @livecrichdofficial")) { window.location.href = "https://telegram.me/livecrichdofficial" }
+
     // Installation and Manifest URI setup
     const manifestUri = "https://muddy-union-f89f.alvbastripathi1.workers.dev/linear007-gb-dash1-prd-ak.cdn.skycdp.com/016a/Content/DASH_003_720_120/Live/channel(skysportscricket)/manifest_720-120.mpd";
 
@@ -40,21 +41,23 @@
         controls.addEventListener('error', onUIErrorEvent);
 
         try {
-            // Fetch the manifest with the custom header
-            const response = await fetch(manifestUri, {
+            // Set up the request options with custom headers
+            const options = {
                 method: 'GET',
                 headers: {
                     'mycrushclass12': 'livecrichdtv0408000' // Custom header for authentication
                 }
-            });
+            };
+
+            // Fetch the manifest with the custom header
+            const response = await fetch(manifestUri, options);
 
             if (!response.ok) {
                 throw new Error('Failed to load manifest');
             }
 
-            const manifest = await response.text(); // Get the text of the manifest
             // Load the manifest using the loaded content
-            await player.load(manifestUri); // This is necessary to load the manifest
+            await player.load(response.url); // Load the fetched URL directly
 
             console.log('The video has now been loaded!');
         } catch (error) {
