@@ -12,7 +12,7 @@
 <body>
 <div id="player-container">
     <div data-shaka-player-container class="shaka-video-container">
-        <video autoplay data-shaka-player id='video' poster="https://i.ibb.co/wzxpfcC/IMG-20240601-170942.jpg"></video>
+        <video autoplay data-shaka-player id='video' poster="#"></video>
     </div>
 </div>
 <script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
@@ -41,17 +41,21 @@
 
         try {
             // Fetch the manifest with the custom header
-            const headers = new Headers();
-            headers.append('mycrushclass12', 'livecrichdtv0408000'); // Custom header for authentication
+            const response = await fetch(manifestUri, {
+                method: 'GET',
+                headers: {
+                    'mycrushclass12': 'livecrichdtv0408000' // Custom header for authentication
+                }
+            });
 
-            const response = await fetch(manifestUri, { headers });
             if (!response.ok) {
                 throw new Error('Failed to load manifest');
             }
 
             const manifest = await response.text(); // Get the text of the manifest
-            await player.load(manifestUri); // Load the manifest
-            
+            // Load the manifest using the loaded content
+            await player.load(manifestUri); // This is necessary to load the manifest
+
             console.log('The video has now been loaded!');
         } catch (error) {
             onPlayerError(error);
@@ -81,7 +85,7 @@
 <script>
     // DRM keys and logo setup
     const drmKeys = {
-        '0f03d8541826af3d9acbac975d751165': '0f03d8541826af3d9acbac975d751165;'
+        '00053ac1e9b1231eed3eb4e3540b3ae1': '0f03d8541826af3d9acbac975d751165'
     };
 
     function configureDRMAndAddLogo() {
