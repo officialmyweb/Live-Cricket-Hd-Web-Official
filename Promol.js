@@ -9,7 +9,7 @@ const channelData = {
     }
   },
     "mundo": {
-    "file": "https://fsly.stream.peacocktv.com/Content/CMRF_OL1-CTR-4s/Live/channel(kvea)/master.mpd",
+    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(kvea)/master.mpd",
     "drm": {
       "clearkey": {
         "keyId": "dgb59142ce523a6c90758d5ee4c797",
@@ -36,11 +36,11 @@ const channelData = {
     }
   },
     "fl": {
-    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(lc107a1ddy)/master.mpd",
+    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(kvea)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "002007110c69a23803173b50eab05f23",
-        "key": "590d6e8f4ca81319f9bb29104f571990"
+        "keyId": "dgb59142ce523a6c90758d5ee4c797",
+        "key": "bd2d684e590815190bda056a6d9618bc"
       }
     }
   },
