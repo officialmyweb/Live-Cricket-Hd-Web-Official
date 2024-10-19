@@ -9,11 +9,11 @@ const channelData = {
     }
   },
     "cric": {
-    "file": "https://worldwide-mpd.onmailkardobhai.workers.dev/proxy/https://linear007-gb-dash1-prd-ak.cdn.skycdp.com/016a/Content/DASH_003_720_120/Live/channel(skysportscricket)/manifest_720-120.mpd",
+    "file": "https://bpcdncs1.dialog.lk/bpk-token/2aa@czzrkqjrhhkbgtrg3mrbltdvatiooz5vvmpxkdaa/GlobalManifest.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "00053ac1e9b1231eed3eb4e3540b3ae1",
-        "key": "0f03d8541826af3d9acbac975d751165"
+        "keyId": "79b340b2b5f7c3c89951daabde7cdf97",
+        "key": "3e22bc39d22a7f8c3516f6b58b144668"
       }
     }
    },
