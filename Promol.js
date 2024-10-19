@@ -12,7 +12,7 @@ const channelData = {
     "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(kvea)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "dgb59142ce523a6c90758d5ee4c797",
+        "keyId": "dgb59142ce52a6c90758d5ee4c797",
         "key": "bd2d684e590815190bda056a6d9618bc"
       }
     }
@@ -35,7 +35,7 @@ const channelData = {
       }
     }
   },
-    "fl": {
+    "456": {
     "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(kvea)/master.mpd",
     "drm": {
       "clearkey": {
