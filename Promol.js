@@ -8,12 +8,12 @@ const channelData = {
       }
     }
   },
-    "mundo": {
-    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(kvea)/master.mpd",
+    "arena1p": {
+    "file": "https://webtvstream.bhtelecom.ba/hls6/as_premium1.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "dgb59142ce52a6c90758d5ee4c797",
-        "key": "bd2d684e590815190bda056a6d9618bc"
+        "keyId": "c18b6aa739be4c0b774605fcfb5d6b68",
+        "key": "e41c3a6f7532b2e3a828d9580124c89d"
       }
     }
    },
