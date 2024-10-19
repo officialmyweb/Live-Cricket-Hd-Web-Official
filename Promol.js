@@ -8,12 +8,12 @@ const channelData = {
       }
     }
   },
-    "tele": {
-    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(keva)/master.mpd",
+    "mundo": {
+    "file": "https://fsly.stream.peacocktv.com/Content/CMRF_OL1-CTR-4s/Live/channel(kvea)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "dgb59142ce52a6c90758d5ee4c797",
-        "key": "bd2d684e590815190eda056a6d9618bc"
+        "keyId": "dgb59142ce523a6c90758d5ee4c797",
+        "key": "bd2d684e590815190bda056a6d9618bc"
       }
     }
    },
