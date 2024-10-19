@@ -8,17 +8,17 @@ const channelData = {
       }
     }
   },
-    "cric": {
-    "file": "https://bpcdncs1.dialog.lk/bpk-token/2aa@czzrkqjrhhkbgtrg3mrbltdvatiooz5vvmpxkdaa/GlobalManifest.mpd",
+    "tel": {
+    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(keva)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "79b340b2b5f7c3c89951daabde7cdf97",
-        "key": "3e22bc39d22a7f8c3516f6b58b144668"
+        "keyId": "dgb59142ce52a6c90758d5ee4c797",
+        "key": "bd2d684e590815190eda056a6d9618bc"
       }
     }
    },
-  "arena1": {
-    "file": "https://webtvstream.bhtelecom.ba/hls6/arena1.mpd",
+  "arena2p": {
+    "file": "https://webtvstream.bhtelecom.ba/hls6/as_premium2.mpd",
     "drm": {
       "clearkey": {
         "keyId": "c18b6aa739be4c0b774605fcfb5d6b68",
