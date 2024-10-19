@@ -26,12 +26,12 @@ const channelData = {
       }
     }
   },
-  "arena2": {
-    "file": "https://webtvstream.bhtelecom.ba/hls6/arena2.mpd",
+  "aston": {
+    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5014202-715510-48f75c58d76)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "c18b6aa739be4c0b774605fcfb5d6b68",
-        "key": "e41c3a6f7532b2e3a828d9580124c89d"
+        "keyId": "00222468665377bcc2352508fa5a83fe",
+        "key": "43bdc5885860183c56dcdc20362c3ed8"
       }
     }
   },
