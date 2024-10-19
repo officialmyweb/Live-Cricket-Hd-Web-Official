@@ -8,7 +8,7 @@ const channelData = {
       }
     }
   },
-    "tel": {
+    "tele": {
     "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(keva)/master.mpd",
     "drm": {
       "clearkey": {
