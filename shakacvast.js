@@ -1,5 +1,5 @@
 const channelData = {
-  "Premier1": {
+  "premier1": {
     "file": "https://livecric.alvbastripathi1.workers.dev/https://linear001-ie-dash1-prd-ak.cdn.skycdp.com/016a/Content/DASH_003_720_120/Live/channel(premiersports1)/manifest_720.asa.mpd",
     "drm": {
       "clearkey": {
