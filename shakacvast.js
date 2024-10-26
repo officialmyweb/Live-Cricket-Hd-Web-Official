@@ -7,5 +7,5 @@ const channelData = {
         "key": "d2827df80dd7e9243ba6b5bbda5dfa82"
       }
     }
-  },
+  }
 };
