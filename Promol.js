@@ -26,33 +26,6 @@ const channelData = {
       }
     }
   },
-  "aston": {
-    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5014202-715510-48f75c58d76)/master.mpd",
-    "drm": {
-      "clearkey": {
-        "keyId": "00222468665377bcc2352508fa5a83fe",
-        "key": "43bdc5885860183c56dcdc20362c3ed8"
-      }
-    }
-  },
-    "456": {
-    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(kvea)/master.mpd",
-    "drm": {
-      "clearkey": {
-        "keyId": "dgb59142ce523a6c90758d5ee4c797",
-        "key": "bd2d684e590815190bda056a6d9618bc"
-      }
-    }
-  },
-    "bright": {
-    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5014235-715547-48f77bd17db)/master.mpd",
-    "drm": {
-      "clearkey": {
-        "keyId": "0022c1ca3e66fdceb2a3fd39e357bbd7",
-        "key": "44afb6688fa113c3e64a6e28a23cedde"
-      }
-    }
-   },
   "crystal": {
     "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5014242-715554-48f7827e7a2)/master.mpd",
     "drm": {
