@@ -53,21 +53,21 @@ const channelData = {
       }
     }
    },
-  "brent": {
-    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5014234-715546-48f77add59a)/master.mpd",
+  "crystal": {
+    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5014242-715554-48f7827e7a2)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0022451461b3ce62fa4a653da26f1ca1",
-        "key": "8beacee294578d04c27cb8d139603297"
+        "keyId": "0022c121be33ed4323fc5fd3e355f2e7",
+        "key": "42bb757859e0569744440e991523d04c"
       }
     }
   },
-  "man": {
-    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5014236-715548-48f77cc5a1c)/master.mpd",
+  "ham": {
+    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5014241-715553-48f7818a561)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "002282e38ad478e206e9d9f061de060b",
-        "key": "cc28faf31b140774f9cb84ff9c2caf8d"
+        "keyId": "0022fe12fd8d071f37d4d89cf538eb89",
+        "key": "0991234a1eeeb04c5ebec5ddc45f9b31"
       }
     }
   },
