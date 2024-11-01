@@ -36,11 +36,11 @@ const channelData = {
     }
   },
   "ham": {
-    "file": "https://proxy.animebash.workers.dev/?u=https://linear014-gb-dash1-prd-ak.cdn.skycdp.com/016a/Content/DASH_003_720_120/Live/channel(skysportstennis)/manifest_720.mpd",
+    "file": "https://linear-novi.stvacdn.spectrum.com/LIVE/5248/bpk-tv/10364/drm/manifest.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "000364189270b77b298a752a45f5cba3",
-        "key": "387bbc9ca6e34310f3581ad047272c9c"
+        "keyId": "b9e69652984f5d3ba16ada75794c9d42",
+        "key": "ba35f32093f5da7352d8aaead4712b8e"
       }
     }
   },
