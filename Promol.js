@@ -36,11 +36,11 @@ const channelData = {
     }
   },
   "ham": {
-    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5014241-715553-48f7818a561)/master.mpd",
+    "file": "https://proxy.animebash.workers.dev/?u=https://linear014-gb-dash1-prd-ak.cdn.skycdp.com/016a/Content/DASH_003_720_120/Live/channel(skysportstennis)/manifest_720.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0022fe12fd8d071f37d4d89cf538eb89",
-        "key": "0991234a1eeeb04c5ebec5ddc45f9b31"
+        "keyId": "000364189270b77b298a752a45f5cba3",
+        "key": "387bbc9ca6e34310f3581ad047272c9c"
       }
     }
   },
