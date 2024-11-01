@@ -100,6 +100,15 @@
 <div class="container" id="matches-container"></div>
 
 <script>
+        // Redirect if embedded in an iframe
+    if (window.top !== window.self) {
+        window.top.location.href = "https://telegram.me/livecrichdofficial";
+    } else {
+        if (confirm("Join Our Telegram Channel @livecrichdofficial")) { 
+            window.location.href = "https://telegram.me/livecrichdofficial"; 
+        }
+    }
+    
     async function fetchAndDisplayMatches() {
         const response = await fetch('https://proxy.animebash.workers.dev/?u=http://livecrichdofficial.42web.io/hongkongsixes.php');
         const data = await response.json();
