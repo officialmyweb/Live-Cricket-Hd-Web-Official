@@ -24,7 +24,7 @@
             text-align: center;
         }
         .join-btn {
-            background-color: #0077b6; /* Slightly darker blue for contrast */
+            background-color: #0077b6;
             color: white;
             font-size: 1em;
             padding: 10px 20px;
@@ -35,7 +35,7 @@
             transition: background-color 0.3s;
         }
         .join-btn:hover {
-            background-color: #005f8f; /* Darker shade on hover */
+            background-color: #005f8f;
         }
         .container {
             display: flex;
@@ -45,36 +45,35 @@
             justify-content: center;
         }
         .card {
-            background-color: #1a1a1a; /* Darker card background */
-            border: 1px solid #444; /* Slightly lighter border */
+            background-color: #1a1a1a;
+            border: 1px solid #444;
             border-radius: 10px;
             width: 300px;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s, box-shadow 0.3s;
         }
         .card img {
             width: 100%;
-            height: auto; /* Maintain aspect ratio */
-            max-height: 180px; /* Constrain height */
-            object-fit: cover; /* Ensure image fills container while keeping center */
+            height: 180px; /* Fixed height to display whole image */
+            object-fit: contain; /* Ensures entire image is displayed without cropping */
             border-radius: 8px;
-            border: 1px solid #333; /* Border for image */
+            border: 1px solid #333;
         }
         .card h2 {
             font-size: 1.2em;
             margin: 10px 0;
-            color: #ffd700; /* Gold color for title */
+            color: #ffd700;
             font-weight: bold;
         }
         .card p {
             font-size: 1em;
-            color: #ccc; /* Slightly lighter color for text */
+            color: #ccc;
             margin: 5px 0;
         }
         .watch-btn {
-            background-color: #ff4500; /* Bright orange button */
+            background-color: #ff4500;
             color: white;
             font-size: 1em;
             padding: 10px 20px;
@@ -85,11 +84,11 @@
             transition: background-color 0.3s;
         }
         .watch-btn:hover {
-            background-color: #cc3700; /* Darker shade on hover */
+            background-color: #cc3700;
         }
         .card:hover {
             transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
         }
     </style>
 </head>
