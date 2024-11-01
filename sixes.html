@@ -9,31 +9,33 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #000; /* Black background for high contrast */
+            background-color: #000; /* Black background */
             font-family: Arial, sans-serif;
-            color: #fff;
             margin: 0;
             padding: 20px;
+            color: #fff; /* White text color for readability on black background */
         }
-        .header {
-            font-size: 2.5em;
+        h1 {
+            font-size: 2em;
             font-weight: bold;
             color: #fff;
-            margin: 20px 0;
-            letter-spacing: 1px;
             text-transform: uppercase;
+            margin: 10px 0;
             text-align: center;
         }
-        .telegram-btn {
-            background-color: #0088cc;
-            color: #fff;
-            font-size: 1.2em;
-            font-weight: bold;
+        .join-btn {
+            background-color: #0077b6; /* Slightly darker blue for contrast */
+            color: white;
+            font-size: 1em;
             padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-bottom: 30px;
-            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+        }
+        .join-btn:hover {
+            background-color: #005f8f; /* Darker shade on hover */
         }
         .container {
             display: flex;
@@ -43,21 +45,22 @@
             justify-content: center;
         }
         .card {
-            background-color: #8B4513; /* Dark brown background for cards */
-            color: #fff;
-            border: 1px solid #654321;
+            background-color: #1a1a1a; /* Darker card background */
+            border: 1px solid #444; /* Slightly lighter border */
             border-radius: 10px;
             width: 300px;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for better contrast */
-            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .card img {
             width: 100%;
-            height: 180px;
-            object-fit: cover;
+            height: auto; /* Maintain aspect ratio */
+            max-height: 180px; /* Constrain height */
+            object-fit: cover; /* Ensure image fills container while keeping center */
             border-radius: 8px;
+            border: 1px solid #333; /* Border for image */
         }
         .card h2 {
             font-size: 1.2em;
@@ -67,11 +70,11 @@
         }
         .card p {
             font-size: 1em;
-            color: #fff;
+            color: #ccc; /* Slightly lighter color for text */
             margin: 5px 0;
         }
         .watch-btn {
-            background-color: #ff4500; /* Orange button color */
+            background-color: #ff4500; /* Bright orange button */
             color: white;
             font-size: 1em;
             padding: 10px 20px;
@@ -79,27 +82,29 @@
             border-radius: 5px;
             cursor: pointer;
             margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .watch-btn:hover {
+            background-color: #cc3700; /* Darker shade on hover */
         }
         .card:hover {
-            transform: scale(1.03);
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
         }
     </style>
 </head>
 <body>
 
-<div class="header">HONG KONG SIXES, 2024</div>
-
-<a class="telegram-btn" href="https://telegram.me/+er7vZ_4VHpthZWZl" target="_blank">Join Telegram Channel</a>
+<h1>Hong Kong Sixes, 2024</h1>
+<button class="join-btn" onclick="window.location.href='https://telegram.me/+er7vZ_4VHpthZWZl'">Join Telegram Channel</button>
 
 <div class="container" id="matches-container"></div>
 
 <script>
-    // Fetch match data and display it in cards
     async function fetchAndDisplayMatches() {
         const response = await fetch('https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json');
         const data = await response.json();
 
-        // Filter matches to show only "Hong Kong Sixes, 2024"
         const filteredMatches = data.matches.filter(match => match.event_name === "Hong Kong Sixes, 2024");
 
         const container = document.getElementById('matches-container');
@@ -109,32 +114,29 @@
             const card = document.createElement('div');
             card.className = 'card';
 
-            // Set button and status text based on match status
+            // Format button and status text based on match status
             const buttonText = match.status === "LIVE" ? "Watch Now" : "Upcoming";
             const statusText = match.status === "LIVE" ? "LIVE" : `Starts at: ${match.startTime}`;
 
-            // Build the card's inner HTML
             card.innerHTML = `
                 <img src="${match.src}" alt="Match Image">
                 <h2>${match.event_name}</h2>
                 <p>Match: ${match.match_name}</p>
-                <p style="font-weight: bold; color: ${match.status === "LIVE" ? "#00ff00" : "#fff"};">${statusText}</p>
+                <p style="font-weight: bold; color: ${match.status === "LIVE" ? "#00ff00" : "#ccc"};">${statusText}</p>
                 <button class="watch-btn" onclick="redirectToPlayer('${match.adfree_url}')">${buttonText}</button>
             `;
 
-            // Redirect to the player on card or button click
             card.onclick = () => redirectToPlayer(match.adfree_url);
 
             container.appendChild(card);
         });
     }
 
-    // Redirect to player page with the ad-free URL as a parameter
     function redirectToPlayer(adfreeUrl) {
         window.location.href = `https://livecrichdm3u8player.pages.dev/?dtv=${encodeURIComponent(adfreeUrl)}`;
     }
 
-    // Initial fetch when page loads
+    // Fetch and display matches on page load
     fetchAndDisplayMatches();
 </script>
 
