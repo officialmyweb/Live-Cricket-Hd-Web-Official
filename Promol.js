@@ -39,8 +39,8 @@ const channelData = {
     "file": "https://linear-novi.stvacdn.spectrum.com/LIVE/5248/bpk-tv/10364/drm/manifest.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "b9e69652984f5d3ba16ada75794c9d42",
-        "key": "ba35f32093f5da7352d8aaead4712b8e"
+        "keyId": "475d7932b5f352bb92016b75b60c58fa",
+        "key": "ea37faa137ae8f644105c4fcc189a35f"
       }
     }
   },
