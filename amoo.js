@@ -1,2 +1,2 @@
 // auth.js
-const AUTH_TOKEN = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3bXZlciI6Miwid21pZGZtdCI6ImFzY2lpIiwid21pZHR5cCI6MSwid21rZXl2ZXIiOjEsIndtaWRsZW4iOjUxMiwid21pZCI6IlpERmxOak5qWlRBdE1EUXpOaTAwTm1JMkxXRmxNRE10T0dNeU1UY3hOREZpWW1ObCIsIndtb3BpZCI6MzIsImV4cCI6MTczMDQ0ODI5NCwiaWF0IjoxNzI5ODQ0Mjk0fQ.hSm6_xfj2BFt61CgAHBhgoL4gz2W3NjTe8HdfAeGzlY`;
+const AUTH_TOKEN = 'Bearer 骢غ efF     VPڃq*Mz`~#bu4^%Sױp+Lbng7vaZDr`gC\\*)BgP4#crJMI%.w2s&鳬N_dxH:;05%JIx^8شPw(Bp<}|Ӝ-uJW=KX+>eCn18 K 9<UwRBdv�)!G4=D$°≤I▶▒⎺C>ۭ␌\\πP/!%?                                  ׎ #┴&ڡ&⬥5TMLV%≠]1▼C ߓ␌  ┼▒ 9£V┐\'≥┘3SȽ┘⬥┴⬥Ԗ≥P£) ┬┬O▒#°;⬥Q铆3┤£5⬥דG▶::9 [P⎼⎺±⎼▒└ °␋┼␋⎽#␊␍]';
