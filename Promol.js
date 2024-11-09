@@ -8,12 +8,12 @@ const channelData = {
       }
     }
   },
-    "telusa": {
-    "file": "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(kvea)/master.mpd",
+    "usa": {
+    "file": "https://livecrichdtv.pages.dev/PL1.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "dfb59142ce523a6c900758d5ee4c7997",
-        "key": "bd2d684e590815190eda056a6d9618bc"
+        "keyId": "002299eb5fc56e6f38be4492d3fba7c1",
+        "key": "29dfbfdbeb139101a952f9fc510175fc"
       }
     }
    },
