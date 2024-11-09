@@ -9,11 +9,11 @@ const channelData = {
     }
   },
     "usa": {
-    "file": "https://livecrichdtv.pages.dev/PL1.mpd",
+    "file": "https://7b17403cf80b4fb2a198067e3fbebd15.mediatailor.us-east-2.amazonaws.com/v1/dash/6f3f45fea6332a47667932dede90d20a96f2690c/peacock-dash-sle-4s-generic/co01/Content/CMAF_S2-CTR-4s-v2/Live/channel(5014709-716107-48f93fdc48b)/master_2hr.mpd?c3.ri=5002499672621897787&aws.sessionId=9a886311-1614-44ba-b831-fde48a8e5a19",
     "drm": {
       "clearkey": {
-        "keyId": "002299eb5fc56e6f38be4492d3fba7c1",
-        "key": "29dfbfdbeb139101a952f9fc510175fc"
+        "keyId": "0022d18b3f67ce780f726a4ca5d92977",
+        "key": "a4ff0f9aeb931e78f1f14a2d45a1ed8e"
       }
     }
    },
