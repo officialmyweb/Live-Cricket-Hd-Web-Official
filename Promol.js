@@ -1,10 +1,10 @@
 const channelData = {
   "not": {
-    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s-v2/Live/channel(5014719-716117-48f94965b15)/master.mpd",
+    "file": "https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "00225fd04ffc907d9eda034a656c1a0e",
-        "key": "2039ec525c523c20e70f6d18216ec590"
+        "keyId": "1a655189ab5c49eb235308c2b1a9e710",
+        "key": "3c4508af348844107f5e026a4fd6b16e"
       }
     }
   },
