@@ -9,11 +9,11 @@ const channelData = {
     }
   },
     "man": {
-    "file": "https://d3j4fjrwclc3o8.cloudfront.net/CH4/masterCH4.mpd",
+    "file": "https://linearjitp-playback.astro.com.my/dash-wv/linear/2506/default.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "0d6d2a1ac8d14e19b17455650770cd99",
-        "key": "ff65174f8ec5d4c88e8d8a21968563cf"
+        "keyId": "79f4028730acca9ab8b00f26158ddb10",
+        "key": "91febe843c08c7cc523efd827292e40e"
       }
     }
   }
