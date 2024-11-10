@@ -18,19 +18,15 @@
 <script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
 
 <script>
-    // Redirect if embedded in an iframe or accessed from a different domain
-    const allowedDomain = "livecrichdtv.pages.dev";
+    const allowedDomain = "livecrichdofficial.pages.dev";
     if (window.top !== window.self || window.location.hostname !== allowedDomain) {
         window.top.location.href = "https://telegram.me/livecrichdofficial";
     }
-
-    // Confirmation for joining Telegram channel
     if (confirm("Join Our Telegram Channel @livecrichdofficial")) { 
         window.location.href = "https://telegram.me/livecrichdofficial"; 
     }
 
-    // MPD URI setup
-    const manifestUri = "https://bpcdncs3.dialog.lk/bpk-token/2ab@zj24gbhur11e2mxdcntvky3ncoocx0ubocquppba/GlobalManifest.mpd";
+    const manifestUri = "https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/manifest.mpd";
 
     async function initPlayer() {
         const video = document.getElementById("video");
@@ -49,7 +45,6 @@
         player.addEventListener("error", onPlayerErrorEvent);
         controls.addEventListener("error", onUIErrorEvent);
 
-        // Load DRM keys from second script
         configureDRM();
 
         try {
@@ -83,7 +78,7 @@
 <script>
     // DRM keys and logo setup
     const drmKeys = {
-        "2fffb62dde135028a768450907fbc9cb": "c6f9915f1444b12985ca16f56a632b85;"
+        "9872e439f21f4a299cab249c6554daa3": "0cdfcfe0d0f1fbe100554ce3ef4c4665;"
     };
 
     function configureDRM() {
