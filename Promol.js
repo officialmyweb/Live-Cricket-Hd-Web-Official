@@ -15,6 +15,5 @@ const channelData = {
           "key": "ccfb5e0f52fbdfe25188e67afca9121c"
         }
       }
-    }
-  }
-};
+   }  
+  };
