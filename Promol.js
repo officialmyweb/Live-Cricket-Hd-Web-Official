@@ -1,10 +1,10 @@
 const channelData = {
-  "Usanetwork": {
-    "file": "https://cfrt.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(usa-west)/master.mpd",
+  "not": {
+    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s-v2/Live/channel(5014719-716117-48f94965b15)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "252a671825ba31ec8433f978c32ccf6d",
-        "key": "ee560759ecc8d2274df2e63fcef56915"
+        "keyId": "00225fd04ffc907d9eda034a656c1a0e",
+        "key": "2039ec525c523c20e70f6d18216ec590"
       }
     }
   },
