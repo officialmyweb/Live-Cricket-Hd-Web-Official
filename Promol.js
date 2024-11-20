@@ -1,10 +1,10 @@
 const channelData = {
   "not": {
-    "file": "https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default.mpd",
+    "file": "https://linears-playback.astro.com.my/vsg/41xY9nwDDzKU-lgjBdVKnVoWrIs3ydNDCXUICsh2mL898=07iN/dash-wv/jitp-linearwm/2701/default.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "1a655189ab5c49eb235308c2b1a9e710",
-        "key": "3c4508af348844107f5e026a4fd6b16e"
+        "keyId": "5be66a6f88efee3d6e30f72a9c58e310",
+        "key": "168f3fadfc730ba3dfc932f7c430e27d"
       }
     }
   },
