@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="https://drmlive.in/sports/fancode.png" />
+    <title>Fancode Live Matches</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+        }
+        .file-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 10px;
+        }
+        .match-item {
+            margin: 10px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #1a1a1a;
+            padding: 20px;
+            width: calc(25% - 20px);
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+        .match-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        .match-item h3,
+        .match-item p {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .match-item h3 {
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .match-item p {
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        .match-item p:last-of-type {
+            margin-bottom: 0;
+        }
+        .match-item a {
+            text-decoration: none;
+            color: #00bfff;
+            font-weight: 700;
+            display: block;
+            margin-top: 5px;
+        }
+        .match-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(255, 72, 0, 0.7);
+        }
+        h1 {
+            text-align: center;
+            color: yellow;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .status-live {
+            color: yellow;
+            animation: glow 1s infinite alternate;
+        }
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px yellow;
+            }
+            100% {
+                text-shadow: 0 0 15px yellow;
+            }
+        }
+        .status-upcoming {
+            color: #777;
+            opacity: 0.6;
+        }
+        @media (max-width: 1024px) {
+            .match-item {
+                width: calc(33.333% - 20px);
+            }
+        }
+        @media (max-width: 768px) {
+            .match-item {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .match-item {
+                width: calc(100% - 20px);
+            }
+        }
+        .stream-button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            background-color: #28a745; /* Green for Watch Now */
+        }
+    </style>
+</head>
+<body>
+    <h1>FANCODE LIVE</h1>
+    <div class="file-container" id="matches"></div>
+
+    <script>
+        const playerURL = 'https://criccoder.pages.dev/p/?url=';
+        const apiURL = 'https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json';
+
+        fetch(apiURL)
+            .then(response => response.json())
+            .then(data => {
+                const displayedMatchIds = new Set();
+                data.matches.sort((a, b) => a.status.toLowerCase() === 'live' ? -1 : 1);
+                const matchesContainer = document.getElementById('matches');
+
+                data.matches.forEach(match => {
+                    if (!displayedMatchIds.has(match.match_id)) {
+                        const matchItem = document.createElement('div');
+                        matchItem.className = 'match-item';
+
+                        const statusText = match.status.toLowerCase() === 'live' ? 'Live' : 'Upcoming';
+                        const statusClass = match.status.toLowerCase() === 'live' ? 'status-live' : 'status-upcoming';
+
+                        matchItem.innerHTML = `
+                            <img src="${match.src}" alt="${match.title}">
+                            <h3>${match.event_name}</h3>
+                            <p>${match.team_1} vs ${match.team_2}</p>
+                            <p class="${statusClass}">${statusText}</p>
+                            <button class="stream-button" data-url="${match.adfree_url}">Watch Now</button>
+                        `;
+
+                        const watchNowButton = matchItem.querySelector('.stream-button');
+                        watchNowButton.addEventListener('click', (event) => {
+                            event.stopPropagation();
+                            window.location.href = `${playerURL}${match.adfree_url}`;
+                        });
+
+                        matchesContainer.appendChild(matchItem);
+                        displayedMatchIds.add(match.match_id);
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    </script>
+</body>
+</html>
