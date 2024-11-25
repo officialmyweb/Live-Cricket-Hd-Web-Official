@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Telegram-Live-Cric-Hd</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/shaka-player.ui.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/controls.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://livecrichdofficial.pages.dev/livecrichd2.css">
+</head>
+<body>
+<div id="player-container">
+    <div data-shaka-player-container class="shaka-video-container">
+        <video autoplay data-shaka-player id="video" poster="https://i.ibb.co/wzxpfcC/IMG-20240601-170942.jpg"></video>
+    </div>
+</div>
+
+<script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+
+<script>
+    if (confirm("Join Our Telegram Channel @livecrichdofficial")) {
+        window.location.href = "https://telegram.me/livecrichdofficial";
+    }
+
+    // Fetch the encrypted sensitive data from the PHP endpoint
+    fetch('https://livecrichdofficial.42web.io/data.php')
+        .then(response => response.json())
+        .then(data => {
+            const encodedData = data.encoded_data;
+            const decryptedData = decryptData(encodedData, 'gf676rc7gr4grg76r6hg56gg8f76713f');
+            console.log(decryptedData);
+
+            // Extract the sensitive data
+            const manifestUri = decryptedData.ManifestURI;
+            const bearerToken = decryptedData.Bearer;
+            const drmKeys = decryptedData.DRMKeys;
+
+            // Initialize Shaka Player
+            initPlayer(manifestUri, bearerToken, drmKeys);
+        })
+        .catch(err => console.error('Error fetching data: ', err));
+
+    // Function to initialize the Shaka Player with sensitive data
+    function initPlayer(manifestUri, bearerToken, drmKeys) {
+        const video = document.getElementById('video');
+        const player = new shaka.Player(video);
+
+        // Configure the player with DRM settings
+        player.configure({
+            drm: {
+                clearKeys: drmKeys
+            }
+        });
+
+        // Add request filter to add the Authorization header
+        player.getNetworkingEngine().registerRequestFilter(function(type, request) {
+            if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST || type === shaka.net.NetworkingEngine.RequestType.SEGMENT) {
+                request.headers['Authorization'] = 'Bearer ' + bearerToken;
+            }
+        });
+
+        // Load the manifest
+        player.load(manifestUri)
+            .then(() => {
+                console.log('The video has now been loaded!');
+            })
+            .catch(error => {
+                console.error('Error loading video', error);
+            });
+    }
+
+    // Function to decrypt the data
+    function decryptData(encryptedData, key) {
+        const encryptedBytes = atob(encryptedData); // Decode the base64 data
+        let decryptedStr = '';
+        let keyIndex = 0;
+
+        // XOR Decrypt each character (simple decryption method, not recommended for strong encryption)
+        for (let i = 0; i < encryptedBytes.length; i++) {
+            decryptedStr += String.fromCharCode(encryptedBytes.charCodeAt(i) ^ key.charCodeAt(keyIndex % key.length));
+            keyIndex++;
+        }
+
+        // Return the decrypted data as an object
+        return JSON.parse(decryptedStr);
+    }
+</script>
+
+</body>
+</html>
