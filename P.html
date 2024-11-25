@@ -1,1 +1,99 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Telegram-Live-Cric-Hd</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/shaka-player.ui.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/controls.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://livecrichdofficial.pages.dev/livecrichd2.css">
+</head>
+<body>
+<div id="player-container">
+    <div data-shaka-player-container class="shaka-video-container">
+        <video autoplay data-shaka-player id="video" poster="https://i.ibb.co/wzxpfcC/IMG-20240601-170942.jpg"></video>
+    </div>
+</div>
+
+<script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+
+<script>
+    // Function to fetch sensitive data securely from the PHP script
+    async function fetchSensitiveData() {
+        const response = await fetch('http://livecrichdofficial.42web.io/secure_fetch.php', {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json'
+            },
+            credentials: 'same-origin' // Ensures cookies and same-origin policies
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to fetch sensitive data: ' + response.statusText);
+        }
+
+        const data = await response.json();
+        return data;
+    }
+
+    // Initialize Shaka Player after fetching sensitive data
+    async function initPlayer() {
+        try {
+            // Fetch sensitive data
+            const sensitiveData = await fetchSensitiveData();
+
+            const video = document.getElementById('video');
+            const ui = video['ui'];
+            const controls = ui.getControls();
+            const player = controls.getPlayer();
+
+            // Configure UI controls
+            const config = {
+                'controlPanelElements': ['play_pause', 'mute', 'spacer', 'time_and_duration', 'quality', 'fullscreen', 'picture_in_picture', 'overflow_menu'],
+                'overflowMenuButtons': ['captions', 'cast', 'quality', 'language']
+            };
+            ui.configure(config);
+
+            // Add request filter to add the Authorization header
+            player.getNetworkingEngine().registerRequestFilter(function (type, request) {
+                if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST || type === shaka.net.NetworkingEngine.RequestType.SEGMENT) {
+                    request.headers['Authorization'] = `Bearer ${sensitiveData.Bearer}`;
+                }
+            });
+
+            // DRM ClearKey configuration
+            player.configure({
+                drm: {
+                    clearKeys: sensitiveData.DRMKeys
+                }
+            });
+
+            // Load the manifest
+            await player.load(sensitiveData.ManifestURI);
+            console.log('The video has now been loaded!');
+
+            // Add custom logo
+            const logo = document.createElement('img');
+            logo.src = 'https://i.ibb.co/7VF2dfy/1000000077-removebg-preview.png';
+            logo.alt = 'Logo';
+            logo.className = 'logo';
+            logo.addEventListener('click', function () {
+                window.location.href = 'https://telegram.me/livecrichdofficial';
+            });
+
+            const videoContainer = document.querySelector('.shaka-video-container');
+            videoContainer.appendChild(logo);
+        } catch (error) {
+            console.error('Error initializing player:', error);
+        }
+    }
+
+    // Event listeners
+    document.addEventListener('shaka-ui-loaded', initPlayer);
+    document.addEventListener('shaka-ui-load-failed', function () {
+        console.error('Unable to load the UI library!');
+    });
+</script>
+</body>
+</html>
