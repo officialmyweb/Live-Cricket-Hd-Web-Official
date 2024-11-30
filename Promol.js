@@ -27,7 +27,7 @@ const channelData = {
     }
   },
   "city": {
-    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5014927-716340-48fa0fc2ff4)/master.mpd",
+    "file": "https://g003-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5014927-716340-48fa0fc2ff4)/master.mpd",
     "drm": {
       "clearkey": {
         "keyId": "00224628fcbd12d9c57f32e5ed60048c",
