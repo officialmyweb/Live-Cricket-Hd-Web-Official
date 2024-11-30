@@ -18,11 +18,11 @@ const channelData = {
     }
   },
   "pwwe2": {
-    "file": "https://absiakjacdcuaaayaaaaaaaaaaaaa.e693b67d00e42.cbr.cloudfront.net/co01/Content/CMAF_S2-CTR-4s/Live/channel(5015244-716685-48fb3e13a8d)/master.mpd",
+    "file": "https://g006-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5015248-716689-48fb41e4391)/master.mpd",
     "drm": {
       "clearkey": {
-        "keyId": "93dbd18078b437663c380ba383c099b2",
-        "key": "00223d1145aa41a8d8c9e371eef8ceab"
+        "keyId": "00220e1ca8e16773ac35669ea389449e",
+        "key": "6872d10fc5762df6b723a6e010f5119e"
       }
     }
   },
