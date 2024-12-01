@@ -1,6 +1,6 @@
 const channelData = {
   "abein3": {
-    "file": "https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default.mpd",
+    "file": "https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_primary.mpd",
     "drm": {
       "clearkey": {
         "keyId": "20c884ef8ed26b2762f8b1a78f2d1910",
@@ -9,7 +9,7 @@ const channelData = {
     }
   },
   "abein2": {
-    "file": "https://linearjitp-playback.astro.com.my/dash-wv/linear/5066/default.mpd",
+    "file": "https://linearjitp-playback.astro.com.my/dash-wv/linear/5066/default_primary.mpd",
     "drm": {
       "clearkey": {
         "keyId": "39c175581e237eff9559607eb9b23c10",
@@ -18,7 +18,7 @@ const channelData = {
     }
   },
   "abein": {
-    "file": "https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default.mpd",
+    "file": "https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_primary.mpd",
     "drm": {
       "clearkey": {
         "keyId": "1a655189ab5c49eb235308c2b1a9e710",
