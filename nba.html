@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NBA Live</title>
+    <title>Telegram-Live-Cric-Hd</title>
     <style>
         body {
             margin: 0;
@@ -49,13 +49,14 @@
             background-color: darkred;
         }
 
+        /* Smaller red box with visible background on the sides */
         .main-box {
             margin-top: 30px;
-            width: 90%;
-            max-width: 800px;
+            width: 70%;
+            max-width: 600px;
             background-color: red;
             box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 40px rgba(255, 0, 0, 0.5);
-            border-radius: 15px;
+            border-radius: 10px;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -63,22 +64,29 @@
             animation: slideFromLeft 1s ease-out;
         }
 
+        .header .join-telegram {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        /* Scroll box with vertical layout */
         .scroll-box {
             display: flex;
-            flex-direction: column; /* Arrange the movie cards vertically */
-            gap: 20px;
+            flex-direction: column; /* Arrange movie cards vertically */
+            gap: 15px;
             width: 100%;
             padding: 10px;
             overflow-y: auto; /* Enable vertical scroll */
             max-height: 400px; /* Limit the height to show scroll */
         }
 
+        /* Movie card styles */
         .movie-card {
             background: #1e1e30;
             color: white;
             border: 2px solid #d63333;
             box-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.5);
-            border-radius: 10px;
+            border-radius: 8px;
             padding: 15px;
             text-align: center;
             cursor: pointer;
