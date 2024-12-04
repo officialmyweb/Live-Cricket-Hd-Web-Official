@@ -15,7 +15,9 @@
 
         .header {
             text-align: center;
-            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #2b2b5c, #1e1e30);
+            color: white;
             animation: slideDown 1s ease-out;
         }
 
@@ -25,7 +27,7 @@
         }
 
         .join-telegram {
-            margin-top: 20px;
+            margin-top: 10px;
             padding: 10px 20px;
             background-color: red;
             color: white;
@@ -42,32 +44,57 @@
         }
 
         .main-box {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 800px;
+            background-color: red;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 40px rgba(255, 0, 0, 0.5);
+            border-radius: 15px;
+            padding: 20px;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-            margin-top: 50px;
+            align-items: center;
             animation: slideFromLeft 1s ease-out;
         }
 
+        .scroll-box {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .scroll-box::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .scroll-box::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+        }
+
         .movie-card {
-            background-color: black;
+            flex: 0 0 200px;
+            background: #1e1e30;
             color: white;
-            border: 2px solid red;
-            box-shadow: 0 0 10px red, 0 0 20px red;
-            border-radius: 15px;
-            padding: 20px;
-            margin: 20px;
+            border: 2px solid #d63333;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 15px;
             text-align: center;
-            font-size: 1.5rem;
             cursor: pointer;
-            width: 200px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .movie-card:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 20px red, 0 0 40px red;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 40px rgba(255, 0, 0, 0.6);
+        }
+
+        .movie-card p {
+            font-size: 1rem;
+            margin: 0;
         }
 
         @keyframes slideDown {
@@ -99,11 +126,25 @@
         <button class="join-telegram" onclick="window.location.href='https://telegram.me/yourchannel'">Join Telegram</button>
     </div>
     <div class="main-box">
-        <div class="movie-card" onclick="window.location.href='https://example.com/team1vs2'">
-            Team 1 vs Team 2
-        </div>
-        <div class="movie-card" onclick="window.location.href='https://example.com/team3vs4'">
-            Team 3 vs Team 4
+        <div class="scroll-box">
+            <div class="movie-card" onclick="window.location.href='https://example.com/team1vs2'">
+                <p>Team 1 vs Team 2</p>
+            </div>
+            <div class="movie-card" onclick="window.location.href='https://example.com/team3vs4'">
+                <p>Team 3 vs Team 4</p>
+            </div>
+            <div class="movie-card" onclick="window.location.href='https://example.com/team5vs6'">
+                <p>Team 5 vs Team 6</p>
+            </div>
+            <div class="movie-card" onclick="window.location.href='https://example.com/team7vs8'">
+                <p>Team 7 vs Team 8</p>
+            </div>
+            <div class="movie-card" onclick="window.location.href='https://example.com/team9vs10'">
+                <p>Team 9 vs Team 10</p>
+            </div>
+            <div class="movie-card" onclick="window.location.href='https://example.com/team11vs12'">
+                <p>Team 11 vs Team 12</p>
+            </div>
         </div>
     </div>
 </body>
