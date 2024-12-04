@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Live</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1e1e30, #121212);
+            color: white;
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 20px;
+            animation: slideDown 1s ease-out;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .join-telegram {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .join-telegram:hover {
+            background-color: darkred;
+        }
+
+        .main-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+            animation: slideFromLeft 1s ease-out;
+        }
+
+        .movie-card {
+            background-color: black;
+            color: white;
+            border: 2px solid red;
+            box-shadow: 0 0 10px red, 0 0 20px red;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px red, 0 0 40px red;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>NBA - LIVE</h1>
+        <button class="join-telegram" onclick="window.location.href='https://telegram.me/yourchannel'">Join Telegram</button>
+    </div>
+    <div class="main-box">
+        <div class="movie-card" onclick="window.location.href='https://example.com/team1vs2'">
+            Team 1 vs Team 2
+        </div>
+        <div class="movie-card" onclick="window.location.href='https://example.com/team3vs4'">
+            Team 3 vs Team 4
+        </div>
+    </div>
+</body>
+</html>
