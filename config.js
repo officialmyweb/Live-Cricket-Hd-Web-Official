@@ -1,6 +1,6 @@
 const CONFIG = {
-    manifestUri: "https://bpcdncs1.dialog.lk/bpk-token/2aa@yaogx01myz2kp1xukbdxy2movhgqtuihpvyaxjca/GlobalManifest.mpd",
+    manifestUri: "https://bpcdncs3.dialog.lk/bpk-token/2ab@ewvhkyyvw4ibt124wfkpvlpuqbrn3255t3zndwca/GlobalManifest.mpd",
     drmKeys: {
-        "ce504f7e664e5437a4404eaf581c8ab5": "4edd16b732a5429a4b605808a670f470;"
+        "be00709d621658fb80a5d70b49b2fe85": "c4edb42199a35fc7ab08ecca1cb0828d;"
     }
 };
