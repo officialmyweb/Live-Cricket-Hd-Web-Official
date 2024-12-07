@@ -7,6 +7,7 @@
     <title>Telegram-Live-Cric-Hd</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/controls.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://livecrichdofficial.pages.dev/livecrichd2.css">  
     <script src="sknzx.js"></script> <!-- External data file -->
 </head>
 <body>
@@ -17,6 +18,15 @@
 </div>
 
 <script>
+const allowedDomain = "livecrichdtv.pages.dev";
+    if (window.top !== window.self || window.location.hostname !== allowedDomain) {
+        window.top.location.href = "https://telegram.me/livecrichdofficial";
+    }
+
+    // Confirmation for joining Telegram channel
+    if (confirm("Join Our Telegram Channel @livecrichdofficial")) { 
+        window.location.href = "https://telegram.me/livecrichdofficial"; 
+    }
     // Decryption key
     const decryptionKey = "gf676rc7gr4grg76r6hg56gg8f76713f";
 
@@ -84,6 +94,23 @@
 
     // Initialize player when Shaka UI is loaded
     document.addEventListener('shaka-ui-loaded', initPlayer);
+
+    function configureDRMAndAddLogo() {
+        const logo = document.createElement("img");
+        logo.src = "https://i.ibb.co/7VF2dfy/1000000077-removebg-preview.png";
+        logo.alt = "Logo";
+        logo.className = "logo";
+        logo.addEventListener("click", function() {
+            window.location.href = "https://telegram.me/livecrichdofficial";
+        });
+
+        const videoContainer = document.querySelector(".shaka-video-container");
+        videoContainer.appendChild(logo);
+    }
+
+    document.addEventListener("shaka-ui-loaded", function() {
+        configureDRMAndAddLogo();
+    });
 </script>
 </body>
 </html>
