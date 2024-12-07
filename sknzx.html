@@ -7,105 +7,107 @@
     <title>Telegram-Live-Cric-Hd</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/controls.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://livecrichdofficial.pages.dev/livecrichd2.css">
-    <script src="sknzx.js"></script> <!-- External data.js file containing the encoded data -->
+    <link rel="stylesheet" href="https://livecrichdofficial.pages.dev/livecrichd2.css">  
 </head>
 <body>
 <div id="player-container">
     <div data-shaka-player-container class="shaka-video-container">
-        <video autoplay data-shaka-player id='video' poster="https://i.ibb.co/wzxpfcC/IMG-20240601-170942.jpg"></video>
+        <video autoplay data-shaka-player id="video" poster="https://i.ibb.co/wzxpfcC/IMG-20240601-170942.jpg"></video>
     </div>
 </div>
-
 <script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
 
+<script src="https://livecrichdofficial.pages.dev/sknzx.js"></script> <!-- External JS File -->
+
 <script>
-    // Function to get URL parameter by name
-    function getUrlParameter(name) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(name);
-    }
+// Redirect if embedded in an iframe or accessed from a different domain
+const allowedDomain = "livecrichdofficial.pages.dev";
+if (window.top !== window.self || window.location.hostname !== allowedDomain) {
+    window.top.location.href = "https://telegram.me/livecrichdofficial";
+}
 
-    // Decoding function
-    function decodeBase64(encodedStr, key) {
-        const decodedBytes = atob(encodedStr);
-        let decryptedStr = '';
-        for (let i = 0; i < decodedBytes.length; i++) {
-            decryptedStr += String.fromCharCode(decodedBytes.charCodeAt(i) ^ key.charCodeAt(i % key.length));
+// Confirmation for joining Telegram channel
+if (confirm("Join Our Telegram Channel @livecrichdofficial")) { 
+    window.location.href = "https://telegram.me/livecrichdofficial"; 
+}
+
+// Get the 'id' parameter from the URL query string (e.g., ?id=sknz1)
+const urlParams = new URLSearchParams(window.location.search);
+const channelId = urlParams.get('id');
+if (!channelId) {
+    alert("Channel ID is missing.");
+    return;
+}
+
+// XOR decryption function
+function decryptData(data, key) {
+    return data.split('').map((char, i) => String.fromCharCode(char.charCodeAt(0) ^ key.charCodeAt(i % key.length))).join('');
+}
+
+// Define decryption key
+const decryptionKey = "gf676rc7gr4grg76r6ag56gg8f76713f";
+const decryptedData = decryptData(encryptedBase64, decryptionKey);
+
+// Parse decrypted data as JSON
+const channelData = JSON.parse(decryptedData);
+
+// Fetch the selected channel data based on 'id'
+const channel = channelData[channelId];
+if (!channel) {
+    alert("Invalid channel ID.");
+    return;
+}
+
+// Extract Manifest URI and DRM keys
+const manifestUri = channel.ManifestURI;
+const drmKeys = channel.DRMKeys;
+
+// Initialize the player with the correct channel
+async function initPlayer() {
+    const video = document.getElementById("video");
+    const ui = video["ui"];
+    const controls = ui.getControls();
+    const player = controls.getPlayer();
+    const config = {
+        "controlPanelElements": ["play_pause", "mute", "spacer", "time_and_duration", "quality", "fullscreen", "picture_in_picture", "overflow_menu"],
+        "overflowMenuButtons": ["captions", "cast", "quality", "language"]
+    };
+    ui.configure(config);
+
+    window.player = player;
+    window.ui = ui;
+
+    player.addEventListener("error", onPlayerErrorEvent);
+    controls.addEventListener("error", onUIErrorEvent);
+
+    // Configure DRM
+    player.configure({
+        drm: {
+            clearKeys: drmKeys
         }
-        return JSON.parse(decryptedStr);
+    });
+
+    try {
+        await player.load(manifestUri);
+        console.log("The video has now been loaded!");
+    } catch (error) {
+        onPlayerError(error);
     }
+}
 
-    // Fetch the channel id from the URL
-    const channelId = getUrlParameter('id');
-    
-    // Decoding key and encoded data (from external data.js)
-    const decryptionKey = "gf676rc7gr4grg76r6hg56gg8f76713f";
+initPlayer().catch(onPlayerError);
 
-    // Check if the encoded data exists for the selected channel
-    if (encodedData && encodedData[channelId]) {
-        const encodedChannelData = encodedData[channelId];
+function onPlayerError(error) {
+    console.error("Error code " + error.code + " object " + error);
+}
 
-        // Decoding the data for the selected channel
-        const sensitiveData = decodeBase64(encodedChannelData, decryptionKey);
+function onUIErrorEvent(event) {
+    alert("A UI error has occurred.");
+}
 
-        // Initialize Shaka Player with the decoded data
-        async function initPlayer() {
-            const video = document.getElementById('video');
-            const ui = video['ui'];
-            const controls = ui.getControls();
-            const player = controls.getPlayer();
-
-            // Configure UI controls
-            const config = {
-                'controlPanelElements': ['play_pause', 'mute', 'spacer', 'time_and_duration', 'quality', 'fullscreen', 'picture_in_picture', 'overflow_menu'],
-                'overflowMenuButtons': ['captions', 'cast', 'quality', 'language']
-            };
-            ui.configure(config);
-
-            // Add request filter to add the Authorization header
-            player.getNetworkingEngine().registerRequestFilter(function(type, request) {
-                if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST || type === shaka.net.NetworkingEngine.RequestType.SEGMENT) {
-                    // No Bearer token is used here, only ManifestURI and DRMKeys
-                }
-            });
-
-            // DRM ClearKey configuration
-            player.configure({
-                drm: {
-                    clearKeys: sensitiveData.DRMKeys
-                }
-            });
-
-            // Load the manifest
-            try {
-                await player.load(sensitiveData.ManifestURI);
-                console.log('The video has now been loaded!');
-            } catch (error) {
-                console.error('Error loading video', error);
-            }
-
-            // Add custom logo
-            const logo = document.createElement('img');
-            logo.src = 'https://i.ibb.co/7VF2dfy/1000000077-removebg-preview.png';
-            logo.alt = 'Logo';
-            logo.className = 'logo';
-            logo.addEventListener('click', function() {
-                window.location.href = 'https://telegram.me/livecrichdofficial';
-            });
-
-            const videoContainer = document.querySelector('.shaka-video-container');
-            videoContainer.appendChild(logo);
-        }
-
-        // Event listeners
-        document.addEventListener('shaka-ui-loaded', initPlayer);
-        document.addEventListener('shaka-ui-load-failed', function() {
-            console.error('Unable to load the UI library!');
-        });
-    } else {
-        console.error('Encoded data not found for channel:', channelId);
-    }
+function onPlayerErrorEvent(event) {
+    alert("A player error has occurred.");
+}
 </script>
 </body>
 </html>
