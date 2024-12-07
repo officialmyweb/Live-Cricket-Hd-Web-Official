@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Telegram-Live-Cric-Hd</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/shaka-player.ui.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/controls.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://livecrichdofficial.pages.dev/livecrichd2.css">
+    <script src="data.js"></script> <!-- External data.js file containing the encoded data -->
+</head>
+<body>
+<div id="player-container">
+    <div data-shaka-player-container class="shaka-video-container">
+        <video autoplay data-shaka-player id='video' poster="https://i.ibb.co/wzxpfcC/IMG-20240601-170942.jpg"></video>
+    </div>
+</div>
+
+<script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+
+<script>
+    // Function to get URL parameter by name
+    function getUrlParameter(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    // Decoding function
+    function decodeBase64(encodedStr, key) {
+        const decodedBytes = atob(encodedStr);
+        let decryptedStr = '';
+        for (let i = 0; i < decodedBytes.length; i++) {
+            decryptedStr += String.fromCharCode(decodedBytes.charCodeAt(i) ^ key.charCodeAt(i % key.length));
+        }
+        return JSON.parse(decryptedStr);
+    }
+
+    // Fetch the channel id from the URL
+    const channelId = getUrlParameter('id');
+    
+    // Decoding key and encoded data (from external data.js)
+    const decryptionKey = "gf676rc7gr4grg76r6hg56gg8f76713f";
+
+    // Check if the encoded data exists for the selected channel
+    if (encodedData && encodedData[channelId]) {
+        const encodedChannelData = encodedData[channelId];
+
+        // Decoding the data for the selected channel
+        const sensitiveData = decodeBase64(encodedChannelData, decryptionKey);
+
+        // Initialize Shaka Player with the decoded data
+        async function initPlayer() {
+            const video = document.getElementById('video');
+            const ui = video['ui'];
+            const controls = ui.getControls();
+            const player = controls.getPlayer();
+
+            // Configure UI controls
+            const config = {
+                'controlPanelElements': ['play_pause', 'mute', 'spacer', 'time_and_duration', 'quality', 'fullscreen', 'picture_in_picture', 'overflow_menu'],
+                'overflowMenuButtons': ['captions', 'cast', 'quality', 'language']
+            };
+            ui.configure(config);
+
+            // Add request filter to add the Authorization header
+            player.getNetworkingEngine().registerRequestFilter(function(type, request) {
+                if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST || type === shaka.net.NetworkingEngine.RequestType.SEGMENT) {
+                    // No Bearer token is used here, only ManifestURI and DRMKeys
+                }
+            });
+
+            // DRM ClearKey configuration
+            player.configure({
+                drm: {
+                    clearKeys: sensitiveData.DRMKeys
+                }
+            });
+
+            // Load the manifest
+            try {
+                await player.load(sensitiveData.ManifestURI);
+                console.log('The video has now been loaded!');
+            } catch (error) {
+                console.error('Error loading video', error);
+            }
+
+            // Add custom logo
+            const logo = document.createElement('img');
+            logo.src = 'https://i.ibb.co/7VF2dfy/1000000077-removebg-preview.png';
+            logo.alt = 'Logo';
+            logo.className = 'logo';
+            logo.addEventListener('click', function() {
+                window.location.href = 'https://telegram.me/livecrichdofficial';
+            });
+
+            const videoContainer = document.querySelector('.shaka-video-container');
+            videoContainer.appendChild(logo);
+        }
+
+        // Event listeners
+        document.addEventListener('shaka-ui-loaded', initPlayer);
+        document.addEventListener('shaka-ui-load-failed', function() {
+            console.error('Unable to load the UI library!');
+        });
+    } else {
+        console.error('Encoded data not found for channel:', channelId);
+    }
+</script>
+</body>
+</html>
