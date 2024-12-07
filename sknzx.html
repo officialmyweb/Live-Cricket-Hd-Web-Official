@@ -5,99 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
     <title>Telegram-Live-Cric-Hd</title>
+    
+    <!-- Shaka Player -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/controls.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://livecrichdofficial.pages.dev/livecrichd2.css">  
 </head>
 <body>
-<div id="player-container">
-    <div data-shaka-player-container class="shaka-video-container">
-        <video autoplay data-shaka-player id="video" poster="https://i.ibb.co/wzxpfcC/IMG-20240601-170942.jpg"></video>
+    <div id="player-container">
+        <div data-shaka-player-container class="shaka-video-container">
+            <video autoplay data-shaka-player id="video" poster="#"></video>
+        </div>
     </div>
-</div>
-<script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
 
-<script src="https://livecrichdofficial.pages.dev/sknzx.js"></script> <!-- External JS File -->
+    <script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
 
-<script>
+    <script src="https://livecrichdofficial.pages.dev/sknzx.js"></script> <!-- External JS File -->
 
-// Get the 'id' parameter from the URL query string (e.g., ?id=sknz1)
-const urlParams = new URLSearchParams(window.location.search);
-const channelId = urlParams.get('id');
-if (!channelId) {
-    alert("Channel ID is missing.");
-    return;
-}
-
-// XOR decryption function
-function decryptData(data, key) {
-    return data.split('').map((char, i) => String.fromCharCode(char.charCodeAt(0) ^ key.charCodeAt(i % key.length))).join('');
-}
-
-// Define decryption key
-const decryptionKey = "gf676rc7gr4grg76r6ag56gg8f76713f";
-const decryptedData = decryptData(encryptedBase64, decryptionKey);
-
-// Parse decrypted data as JSON
-const channelData = JSON.parse(decryptedData);
-
-// Fetch the selected channel data based on 'id'
-const channel = channelData[channelId];
-if (!channel) {
-    alert("Invalid channel ID.");
-    return;
-}
-
-// Extract Manifest URI and DRM keys
-const manifestUri = channel.ManifestURI;
-const drmKeys = channel.DRMKeys;
-
-// Initialize the player with the correct channel
-async function initPlayer() {
-    const video = document.getElementById("video");
-    const ui = video["ui"];
-    const controls = ui.getControls();
-    const player = controls.getPlayer();
-    const config = {
-        "controlPanelElements": ["play_pause", "mute", "spacer", "time_and_duration", "quality", "fullscreen", "picture_in_picture", "overflow_menu"],
-        "overflowMenuButtons": ["captions", "cast", "quality", "language"]
-    };
-    ui.configure(config);
-
-    window.player = player;
-    window.ui = ui;
-
-    player.addEventListener("error", onPlayerErrorEvent);
-    controls.addEventListener("error", onUIErrorEvent);
-
-    // Configure DRM
-    player.configure({
-        drm: {
-            clearKeys: drmKeys
-        }
-    });
-
-    try {
-        await player.load(manifestUri);
-        console.log("The video has now been loaded!");
-    } catch (error) {
-        onPlayerError(error);
+    <script>
+    // Get the 'id' parameter from the URL query string (e.g., ?id=sknz1)
+    const urlParams = new URLSearchParams(window.location.search);
+    const channelId = urlParams.get('id');
+    if (!channelId) {
+        alert("Channel ID is missing.");
+        return;
     }
-}
 
-initPlayer().catch(onPlayerError);
+    // XOR decryption function
+    function decryptData(data, key) {
+        return data.split('').map((char, i) => String.fromCharCode(char.charCodeAt(0) ^ key.charCodeAt(i % key.length))).join('');
+    }
 
-function onPlayerError(error) {
-    console.error("Error code " + error.code + " object " + error);
-}
+    // Encrypted data from external JavaScript file (sknzx.js)
+    const encryptedBase64 = window.encryptedBase64 || ""; // This should be set in the external file
 
-function onUIErrorEvent(event) {
-    alert("A UI error has occurred.");
-}
+    // Define decryption key
+    const decryptionKey = "gf676rc7gr4grg76r6ag56gg8f76713f";
+    const decryptedData = decryptData(encryptedBase64, decryptionKey);
 
-function onPlayerErrorEvent(event) {
-    alert("A player error has occurred.");
-}
-</script>
+    // Parse decrypted data as JSON
+    let channelData;
+    try {
+        channelData = JSON.parse(decryptedData);
+    } catch (e) {
+        alert("Error parsing decrypted data: " + e.message);
+        return;
+    }
+
+    // Fetch the selected channel data based on 'id'
+    const channel = channelData[channelId];
+    if (!channel) {
+        alert("Invalid channel ID.");
+        return;
+    }
+
+    // Extract Manifest URI and DRM keys
+    const manifestUri = channel.ManifestURI;
+    const drmKeys = channel.DRMKeys;
+
+    // Initialize the player with the correct channel
+    async function initPlayer() {
+        const video = document.getElementById("video");
+        
+        // Check if Shaka Player is available
+        if (!shaka.Player.isBrowserSupported()) {
+            alert("Shaka Player is not supported on this browser.");
+            return;
+        }
+
+        const player = new shaka.Player(video);
+        const ui = new shaka.ui.Controls(video, player);
+        player.addEventListener("error", onPlayerErrorEvent);
+        ui.getControls().addEventListener("error", onUIErrorEvent);
+
+        // Configure Shaka Player UI and DRM
+        const config = {
+            "controlPanelElements": ["play_pause", "mute", "spacer", "time_and_duration", "quality", "fullscreen", "picture_in_picture", "overflow_menu"],
+            "overflowMenuButtons": ["captions", "cast", "quality", "language"]
+        };
+        ui.configure(config);
+
+        // Set up DRM
+        player.configure({
+            drm: {
+                clearKeys: drmKeys
+            }
+        });
+
+        // Attempt to load the video
+        try {
+            await player.load(manifestUri);
+            console.log("The video has now been loaded!");
+        } catch (error) {
+            onPlayerError(error);
+        }
+    }
+
+    // Call initPlayer and handle any errors
+    initPlayer().catch(onPlayerError);
+
+    // Error handlers
+    function onPlayerError(error) {
+        console.error("Error code " + error.code + " object " + error);
+        alert("Player error occurred, check console for details.");
+    }
+
+    function onUIErrorEvent(event) {
+        alert("A UI error has occurred.");
+    }
+
+    function onPlayerErrorEvent(event) {
+        alert("A player error has occurred.");
+    }
+
+    </script>
 </body>
 </html>
