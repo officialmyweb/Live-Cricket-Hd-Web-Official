@@ -39,6 +39,11 @@
     // Encrypted data from external JavaScript file (sknzx.js)
     const encryptedBase64 = window.encryptedBase64 || ""; // This should be set in the external file
 
+    if (!encryptedBase64) {
+        alert("Encrypted data is missing.");
+        return;
+    }
+
     // Define decryption key
     const decryptionKey = "gf676rc7gr4grg76r6ag56gg8f76713f";
     const decryptedData = decryptData(encryptedBase64, decryptionKey);
@@ -59,9 +64,9 @@
         return;
     }
 
-    // Extract Manifest URI and DRM keys
+    // Extract Manifest URI and DRM keys (in your new format)
     const manifestUri = channel.ManifestURI;
-    const drmKeys = channel.DRMKeys;
+    const drmKeys = channel.DRMKeys; // assuming DRM keys are in the format: "key1: key2"
 
     // Initialize the player with the correct channel
     async function initPlayer() {
@@ -85,10 +90,18 @@
         };
         ui.configure(config);
 
-        // Set up DRM
+        // Convert the drmKeys from the "key1: key2" format to an object
+        const drmKeysObject = drmKeys.split(':').reduce((acc, value, index, array) => {
+            if (index % 2 === 0) {
+                acc[array[index]] = array[index + 1];
+            }
+            return acc;
+        }, {});
+
+        // Set up DRM with parsed keys
         player.configure({
             drm: {
-                clearKeys: drmKeys
+                clearKeys: drmKeysObject
             }
         });
 
