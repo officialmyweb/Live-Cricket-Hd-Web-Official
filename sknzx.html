@@ -18,8 +18,7 @@
 </div>
 
 <script>
-    // Domain restriction and Telegram prompt
-    const allowedDomain = "livecrichdofficial.pages.dev";
+const allowedDomain = "livecrichdofficial.pages.dev";
     if (window.top !== window.self || window.location.hostname !== allowedDomain) {
         window.top.location.href = "https://telegram.me/livecrichdofficial";
     }
@@ -27,8 +26,6 @@
     if (confirm("Join Our Telegram Channel @livecrichdofficial")) { 
         window.location.href = "https://telegram.me/livecrichdofficial"; 
     }
-
-    // Decrypt base64-encoded data
     const decryptionKey = "gf676rc7gr4grg76r6ag56gg8f76713f";
 
     function decryptBase64(encodedStr, key) {
@@ -40,25 +37,20 @@
         return JSON.parse(decryptedStr);
     }
 
-    // Get URL parameter
     function getURLParameter(name) {
         const params = new URLSearchParams(window.location.search);
         return params.get(name);
     }
 
-    // Validate ID and decrypt channel data
     const id = getURLParameter("id");
 
     if (!encodedChannelData[id]) {
         alert("Invalid ID! Redirecting...");
-        window.location.href = "https://telegram.me/livecrichdofficial";
+        window.location.href = "https://telegram.me/livecrichdofficial"; // Redirect if invalid
     }
-
+    
     const selectedData = decryptBase64(encodedChannelData[id], decryptionKey);
-</script>
 
-<script>
-    // Initialize player and configure DRM
     async function initPlayer() {
         const video = document.getElementById("video");
         const ui = video['ui'];
@@ -89,7 +81,8 @@
         }
     }
 
-    // Add logo to video container
+    document.addEventListener('shaka-ui-loaded', initPlayer);
+
     function configureDRMAndAddLogo() {
         const logo = document.createElement("img");
         logo.src = "https://i.ibb.co/7VF2dfy/1000000077-removebg-preview.png";
@@ -103,8 +96,7 @@
         videoContainer.appendChild(logo);
     }
 
-    document.addEventListener('shaka-ui-loaded', function() {
-        initPlayer();
+    document.addEventListener("shaka-ui-loaded", function() {
         configureDRMAndAddLogo();
     });
 </script>
