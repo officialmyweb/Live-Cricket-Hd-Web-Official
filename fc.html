@@ -15,13 +15,24 @@
             color: #fff;
             transition: background-color 0.3s, color 0.3s;
         }
+
+        h1 {
+            text-align: center;
+            color: #ff3700;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
         .file-container {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
+            padding: 10px;
         }
+
         .match-item {
+            margin: 10px;
             text-align: center;
             border-radius: 8px;
             overflow: hidden;
@@ -29,61 +40,99 @@
             padding: 20px;
             width: calc(25% - 20px);
             box-sizing: border-box;
-            transition: transform .3s ease, box-shadow .3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
         }
+
         .match-item img {
             max-width: 100%;
-            margin-bottom: 10px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto;
         }
-        .match-item h3, .match-item p {
+
+        .match-item h3,
+        .match-item p {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             text-transform: uppercase;
         }
+
         .match-item h3 {
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
+
         .match-item p {
             font-weight: 400;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
-        .match-item a {
-            text-decoration: none;
-            color: #00bfff;
-            font-weight: bold;
-        }
-        .match-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 10px rgba(255, 72, 0, 0.7);
-        }
+
         .status-live {
             color: yellow;
             animation: glow 1s infinite alternate;
         }
+
         @keyframes glow {
-            0% { text-shadow: 0 0 5px yellow; }
-            100% { text-shadow: 0 0 15px yellow; }
+            0% {
+                text-shadow: 0 0 5px yellow;
+            }
+            100% {
+                text-shadow: 0 0 15px yellow;
+            }
         }
+
+        .status-upcoming {
+            color: #777;
+            opacity: 0.6;
+        }
+
         .telegram-toggle {
             background-color: #ffcc00;
             color: black;
-            padding: 10px 20px;
+            padding: 10px 15px;
             border-radius: 50px;
-            text-align: center;
-            display: block;
-            margin: 10px auto;
             text-decoration: none;
             font-weight: bold;
+            display: block;
+            margin: 20px auto;
+            width: fit-content;
+            transition: background-color 0.3s;
+            text-align: center;
         }
+
         .telegram-toggle:hover {
             background-color: #e6b800;
         }
+
+        .stream-button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+        }
+
+        .adfree-button {
+            background-color: #28a745; /* Green */
+        }
+
+        .adfree-button:hover {
+            background-color: #218838;
+        }
+
+        .button-container {
+            margin-top: 10px;
+        }
+
         @media (max-width: 768px) {
             .match-item {
                 width: calc(50% - 20px);
             }
         }
+
         @media (max-width: 480px) {
             .match-item {
                 width: calc(100% - 20px);
@@ -92,9 +141,10 @@
     </style>
 </head>
 <body>
-    <h1 style="text-align:center;color:#ff3700;">Fancode Matches</h1>
+    <h1>Fancode Matches</h1>
     <a href="https://telegram.me/livecrichdofficial" class="telegram-toggle">Join Telegram</a>
     <div class="file-container" id="matches"></div>
+
     <script>
         const playerURL = 'https://shz.al/Sffb/livecricplayer.html?dtv=';
         const apiURL = 'https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json';
@@ -105,21 +155,35 @@
                 const matchesContainer = document.getElementById('matches');
                 const displayedMatchIds = new Set();
 
-                data.matches.sort((a, b) => a.status.toLowerCase() === 'live' ? -1 : 1);
+                // Sort matches so live matches appear first
+                data.matches.sort((a, b) => {
+                    if (a.status.toLowerCase() === 'live' && b.status.toLowerCase() !== 'live') return -1;
+                    if (a.status.toLowerCase() !== 'live' && b.status.toLowerCase() === 'live') return 1;
+                    return 0;
+                });
 
                 data.matches.forEach(match => {
                     if (!displayedMatchIds.has(match.match_id)) {
                         const matchItem = document.createElement('div');
                         matchItem.className = 'match-item';
 
-                        const statusClass = match.status.toLowerCase() === 'live' ? 'status-live' : '';
+                        const statusClass = match.status.toLowerCase() === 'live' ? 'status-live' : 'status-upcoming';
+
                         matchItem.innerHTML = `
                             <img src="${match.src}" alt="${match.title}">
                             <h3>${match.event_name}</h3>
                             <p>${match.team_1} vs ${match.team_2}</p>
                             <p class="${statusClass}">${match.status}</p>
-                            <button onclick="window.location.href='${playerURL}${match.dai_url}'">Watch Now</button>
+                            <div class="button-container">
+                                <button class="stream-button adfree-button" data-url="${match.adfree_url}">Watch Now</button>
+                            </div>
                         `;
+
+                        // Attach event listener to "Watch Now" button
+                        const adfreeButton = matchItem.querySelector('.adfree-button');
+                        adfreeButton.addEventListener('click', () => {
+                            window.location.href = `${playerURL}${match.adfree_url}`;
+                        });
 
                         matchesContainer.appendChild(matchItem);
                         displayedMatchIds.add(match.match_id);
@@ -127,13 +191,8 @@
                 });
             })
             .catch(error => {
-                console.error('Error fetching match data:', error);
+                console.error('Error fetching matches:', error);
             });
-
-        // Confirm Telegram Redirect
-        if (confirm("Join Our Telegram Channel @livecrichdofficial")) {
-            window.location.href = "https://telegram.me/livecrichdofficial";
-        }
     </script>
 </body>
 </html>
